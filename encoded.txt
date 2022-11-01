@@ -1,0 +1,2408 @@
+¢ˢ°⁶£¢,Results
+¢ˢ°⁶£¢,Results\Capture
+¢ˢ°⁶£¢,Results\CaptureOL
+for objItem in ¢ª¼⁶·¢("winmgmts:").ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
+    MsgBox, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
+GenerateRandomString(length = 1)
+	{
+		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		StringSplit, chars, characters
+		
+		Random,len2,3,6
+		Loop, %length%
+		{
+			Loop, %len2%
+			{
+				Random, rand, 1, 315
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,XGPhas,1,100
+if XGPhas between 1 and 40
+{
+; None
+¢⁷⁃²₹¢,`nXbox Game Pass Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%Xbox Game Pass Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if XGPhas between 41 and 100
+{
+	; CaptureOL
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%Xbox Game Pass Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		¢⁷⁃²₹¢,%XGPgametitle%`, %A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	¢⁷⁃²₹¢,`nXbox Game Pass Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`nGames:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		¢⁷⁃²₹¢,%XGPgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,battlenethas,1,100
+if battlenethas between 1 and 40
+{
+; None
+¢⁷⁃²₹¢,`nBattle.NET Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%Battle.NET Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if battlenethas between 41 and 100
+{
+	; CaptureOL
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%Battle.NET Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		¢⁷⁃²₹¢,%battlenetgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	¢⁷⁃²₹¢,`nBattle.NET Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		¢⁷⁃²₹¢,%battlenetgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,epichas,1,100
+if epichas between 1 and 40
+{
+; None
+¢⁷⁃²₹¢,`nEpic Games Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%Epic Games Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if epichas between 41 and 100
+{
+	; CaptureOL
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%Epic Games Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		¢⁷⁃²₹¢,%epicgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	¢⁷⁃²₹¢,`nEpic Games Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		¢⁷⁃²₹¢,%epicgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,steamhas,1,100
+if steamhas between 1 and 40
+{
+; None
+¢⁷⁃²₹¢,`nSteam Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%Steam Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if steamhas between 41 and 100
+{
+	; CaptureOL
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%Steam Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		¢⁷⁃²₹¢,%gametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	¢⁷⁃²₹¢,`nSteam Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		¢⁷⁃²₹¢,%gametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,uplayhas,1,100
+if uplayhas between 1 and 40
+{
+; None
+¢⁷⁃²₹¢,`nUPlay Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%UPlay Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if uplayhas between 41 and 100
+{
+	; CaptureOL
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%UPlay Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		¢⁷⁃²₹¢,%uplaygametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	¢⁷⁃²₹¢,`nUPlay Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢⁷⁃²₹¢,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		¢⁷⁃²₹¢,%uplaygametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,creditposs,1,10
+if creditposs = 1
+{
+Random,creditscore,300,400
+}
+if creditposs = 2
+{
+Random,creditscore,350,450
+}
+if creditposs = 3
+{
+Random,creditscore,450,500
+}
+if creditposs = 4
+{
+Random,creditscore,500,550
+}
+if creditposs = 5
+{
+Random,creditscore,550,650
+}
+if creditposs = 6
+{
+Random,creditscore,650,700
+}
+if creditposs = 7
+{
+Random,creditscore,700,750
+}
+if creditposs = 8
+{
+Random,creditscore,750,800
+}
+if creditposs = 9
+{
+Random,creditscore,800,825
+}
+if creditposs = 10
+{
+Random,creditscore,825,850
+}
+¢⁷⁃²₹¢,`nCredit Score: %creditscore%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%Credit Score: %creditscore%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+Random,dob1,1,12
+Random,dob2,1,28
+Random,dob3,1960,2004
+Random,eff1,1,12
+Random,eff2,1,28
+Random,eff3,2019,2023
+	vvf1(length = 1)
+	{
+		characters :="1234567890"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 5
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf2(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+    Loop, 4
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf3(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 1
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv3o,1000000,9999999
+Random,sv3t,10,99
+	vvf4(length = 1)
+	{
+		characters :="1234567890"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 6
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv4o,1,9
+Random,sv4t,1,9
+¢⁷⁃²₹¢,Given Name: %FirstName%`nSurname: %LastName%`nNationality: USA`nSex:%Gender%`nDate of Birth: %dob1%/%dob2%/%dob3%`nPlace of Birth: %State%`nIssued On: %eff1%/%eff2%/%eff3%`n¢◦½⁶¥¢ires on %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf1(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,-,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf2(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,-%sv3o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf3(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf4(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%sv4t%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %LastName%%A_Space%|%A_Space%Nationality: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%Date of Birth: %dob1%/%dob2%/%dob3%%A_Space%|%A_Space%Place of Birth: %State%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%¢◦½⁶¥¢ires on %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf1(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,-,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf2(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,-%sv3o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf3(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,% vvf4(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢⁷⁃²₹¢,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+MsgBox,48,Done!
+¢®¾¿ª¢
+FileCreateDir,Results
+FileCreateDir,Results\Capture
+FileCreateDir,Results\CaptureOL
+for objItem ¢⁷∞÷×¢ ComObjGet("w¢⁷∞÷×¢mgmts:").ExecQuery("SELECT * FROM W¢⁷∞÷×¢32_NetworkAdapterConfiguration WHERE IPEnabled = True")
+    MsgBox, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
+GenerateRandomStr¢⁷∞÷×¢g(length = 1)
+	{
+		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		Str¢⁷∞÷×¢gSplit, chars, characters
+		
+		Random,len2,3,6
+		Loop, %length%
+		{
+			Loop, %len2%
+			{
+				Random, rand, 1, 315
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,XGPhas,1,100
+¢¿⁺ǁ₱¢ XGPhas between 1 and 40
+{
+; None
+FileAppend,`nXbox Game Pass Grabber: N/A,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+}
+¢¿⁺ǁ₱¢ XGPhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		¢£◦∙½¢,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`, %A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+	; Capture
+	FileAppend,`nXbox Game Pass Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`nGames:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		¢£◦∙½¢,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+}
+Random,battlenethas,1,100
+¢¿⁺ǁ₱¢ battlenethas between 1 and 40
+{
+; None
+FileAppend,`nBattle.NET Grabber: N/A,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%Battle.NET Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+}
+¢¿⁺ǁ₱¢ battlenethas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Battle.NET Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		¢£◦∙½¢,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+	; Capture
+	FileAppend,`nBattle.NET Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		¢£◦∙½¢,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+}
+Random,epichas,1,100
+¢¿⁺ǁ₱¢ epichas between 1 and 40
+{
+; None
+FileAppend,`nEpic Games Grabber: N/A,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%Epic Games Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+}
+¢¿⁺ǁ₱¢ epichas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Epic Games Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		¢£◦∙½¢,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+	; Capture
+	FileAppend,`nEpic Games Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		¢£◦∙½¢,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+}
+Random,steamhas,1,100
+¢¿⁺ǁ₱¢ steamhas between 1 and 40
+{
+; None
+FileAppend,`nSteam Grabber: N/A,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%Steam Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+}
+¢¿⁺ǁ₱¢ steamhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Steam Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		¢£◦∙½¢,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+	; Capture
+	FileAppend,`nSteam Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%:%LastName%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		¢£◦∙½¢,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+}
+Random,uplayhas,1,100
+¢¿⁺ǁ₱¢ uplayhas between 1 and 40
+{
+; None
+FileAppend,`nUPlay Grabber: N/A,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%UPlay Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+}
+¢¿⁺ǁ₱¢ uplayhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%UPlay Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		¢£◦∙½¢,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+	; Capture
+	FileAppend,`nUPlay Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,% GenerateRandomStr¢⁷∞÷×¢g(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		¢£◦∙½¢,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+	}
+}
+Random,creditposs,1,10
+¢¿⁺ǁ₱¢ creditposs = 1
+{
+Random,creditscore,300,400
+}
+¢¿⁺ǁ₱¢ creditposs = 2
+{
+Random,creditscore,350,450
+}
+¢¿⁺ǁ₱¢ creditposs = 3
+{
+Random,creditscore,450,500
+}
+¢¿⁺ǁ₱¢ creditposs = 4
+{
+Random,creditscore,500,550
+}
+¢¿⁺ǁ₱¢ creditposs = 5
+{
+Random,creditscore,550,650
+}
+¢¿⁺ǁ₱¢ creditposs = 6
+{
+Random,creditscore,650,700
+}
+¢¿⁺ǁ₱¢ creditposs = 7
+{
+Random,creditscore,700,750
+}
+¢¿⁺ǁ₱¢ creditposs = 8
+{
+Random,creditscore,750,800
+}
+¢¿⁺ǁ₱¢ creditposs = 9
+{
+Random,creditscore,800,825
+}
+¢¿⁺ǁ₱¢ creditposs = 10
+{
+Random,creditscore,825,850
+}
+FileAppend,`nCredit Score: %creditscore%`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%Credit Score: %creditscore%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+Random,dob1,1,12
+Random,dob2,1,28
+Random,dob3,1960,2004
+Random,eff1,1,12
+Random,eff2,1,28
+Random,eff3,2019,2023
+	vvf1(length = 1)
+	{
+		characters :="1234567890"
+		Str¢⁷∞÷×¢gSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 5
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf2(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		Str¢⁷∞÷×¢gSplit, chars, characters
+		
+		Loop, %length%
+		{
+    Loop, 4
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf3(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		Str¢⁷∞÷×¢gSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 1
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv3o,1000000,9999999
+Random,sv3t,10,99
+	vvf4(length = 1)
+	{
+		characters :="1234567890"
+		Str¢⁷∞÷×¢gSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 6
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv4o,1,9
+Random,sv4t,1,9
+FileAppend,Given Name: %FirstName%`nSurname: %LastName%`nNationality: USA`nSex:%Gender%`nDate of Birth: %dob1%/%dob2%/%dob3%`nPlace of Birth: %State%`nIssued On: %eff1%/%eff2%/%eff3%`nExpires on %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf1(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,-,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf2(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,-%sv3o%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf3(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf4(),Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%sv4t%`n,Results/Capture/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %LastName%%A_Space%|%A_Space%Nationality: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%Date of Birth: %dob1%/%dob2%/%dob3%%A_Space%|%A_Space%Place of Birth: %State%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%Expires on %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf1(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,-,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf2(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,-%sv3o%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf3(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,% vvf4(),Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+FileAppend,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Alt¢¿⁺ǁ₱¢y#4476 - Thanks ¢ª£₩¿¢ Boost¢⁷∞÷×¢g.txt,
+MsgBox,48,Done!
+ExitApp
+FileCreateDir,Results
+FileCreateDir,Results\Capture
+FileCreateDir,Results\CaptureOL
+for objItem in ComObjGet("winmgmts:").ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
+    ¢₫ǁø‣¢, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
+Generate¢·∙¡€¢String(length = 1)
+	{
+		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		StringSplit, chars, characters
+		
+		¢·∙¡€¢,len2,3,6
+		¢⁵∙⁵÷¢, %length%
+		{
+			¢⁵∙⁵÷¢, %len2%
+			{
+				¢·∙¡€¢, rand, 1, 315
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+¢·∙¡€¢,XGPhas,1,100
+if XGPhas between 1 and 40
+{
+; None
+FileAppend,`nXbox Game Pass Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if XGPhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, XGPgamecount,1,25
+	¢⁵∙⁵÷¢, %XGPgamecount%
+	{
+		¢·∙¡€¢,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`, %A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nXbox Game Pass Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`nGames:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, XGPgamecount,1,25
+	¢⁵∙⁵÷¢, %XGPgamecount%
+	{
+		¢·∙¡€¢,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+¢·∙¡€¢,battlenethas,1,100
+if battlenethas between 1 and 40
+{
+; None
+FileAppend,`nBattle.NET Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Battle.NET Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if battlenethas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Battle.NET Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, battlenetgamecount,1,8
+	¢⁵∙⁵÷¢, %battlenetgamecount%
+	{
+		¢·∙¡€¢,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nBattle.NET Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, battlenetgamecount,1,8
+	¢⁵∙⁵÷¢, %battlenetgamecount%
+	{
+		¢·∙¡€¢,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+¢·∙¡€¢,epichas,1,100
+if epichas between 1 and 40
+{
+; None
+FileAppend,`nEpic Games Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Epic Games Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if epichas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Epic Games Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, epicgamecount,1,5
+	¢⁵∙⁵÷¢, %epicgamecount%
+	{
+		¢·∙¡€¢,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nEpic Games Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, epicgamecount,1,5
+	¢⁵∙⁵÷¢, %epicgamecount%
+	{
+		¢·∙¡€¢,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+¢·∙¡€¢,steamhas,1,100
+if steamhas between 1 and 40
+{
+; None
+FileAppend,`nSteam Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Steam Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if steamhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Steam Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, gamecount,1,50
+	¢⁵∙⁵÷¢, %gamecount%
+	{
+		¢·∙¡€¢,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nSteam Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, gamecount,1,50
+	¢⁵∙⁵÷¢, %gamecount%
+	{
+		¢·∙¡€¢,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+¢·∙¡€¢,uplayhas,1,100
+if uplayhas between 1 and 40
+{
+; None
+FileAppend,`nUPlay Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%UPlay Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if uplayhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%UPlay Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, uplaygamecount,1,5
+	¢⁵∙⁵÷¢, %uplaygamecount%
+	{
+		¢·∙¡€¢,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nUPlay Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% Generate¢·∙¡€¢String(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	¢·∙¡€¢, uplaygamecount,1,5
+	¢⁵∙⁵÷¢, %uplaygamecount%
+	{
+		¢·∙¡€¢,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+¢·∙¡€¢,creditposs,1,10
+if creditposs = 1
+{
+¢·∙¡€¢,creditscore,300,400
+}
+if creditposs = 2
+{
+¢·∙¡€¢,creditscore,350,450
+}
+if creditposs = 3
+{
+¢·∙¡€¢,creditscore,450,500
+}
+if creditposs = 4
+{
+¢·∙¡€¢,creditscore,500,550
+}
+if creditposs = 5
+{
+¢·∙¡€¢,creditscore,550,650
+}
+if creditposs = 6
+{
+¢·∙¡€¢,creditscore,650,700
+}
+if creditposs = 7
+{
+¢·∙¡€¢,creditscore,700,750
+}
+if creditposs = 8
+{
+¢·∙¡€¢,creditscore,750,800
+}
+if creditposs = 9
+{
+¢·∙¡€¢,creditscore,800,825
+}
+if creditposs = 10
+{
+¢·∙¡€¢,creditscore,825,850
+}
+FileAppend,`nCredit Score: %creditscore%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Credit Score: %creditscore%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢·∙¡€¢,dob1,1,12
+¢·∙¡€¢,dob2,1,28
+¢·∙¡€¢,dob3,1960,2004
+¢·∙¡€¢,eff1,1,12
+¢·∙¡€¢,eff2,1,28
+¢·∙¡€¢,eff3,2019,2023
+	vvf1(length = 1)
+	{
+		characters :="1234567890"
+		StringSplit, chars, characters
+		
+		¢⁵∙⁵÷¢, %length%
+		{
+			¢⁵∙⁵÷¢, 5
+			{
+				¢·∙¡€¢, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf2(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		StringSplit, chars, characters
+		
+		¢⁵∙⁵÷¢, %length%
+		{
+    ¢⁵∙⁵÷¢, 4
+			{
+				¢·∙¡€¢, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf3(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		StringSplit, chars, characters
+		
+		¢⁵∙⁵÷¢, %length%
+		{
+			¢⁵∙⁵÷¢, 1
+			{
+				¢·∙¡€¢, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+¢·∙¡€¢,sv3o,1000000,9999999
+¢·∙¡€¢,sv3t,10,99
+	vvf4(length = 1)
+	{
+		characters :="1234567890"
+		StringSplit, chars, characters
+		
+		¢⁵∙⁵÷¢, %length%
+		{
+			¢⁵∙⁵÷¢, 6
+			{
+				¢·∙¡€¢, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+¢·∙¡€¢,sv4o,1,9
+¢·∙¡€¢,sv4t,1,9
+FileAppend,Given Name: %FirstName%`nSurname: %LastName%`nNationality: USA`nSex:%Gender%`nDate of Birth: %dob1%/%dob2%/%dob3%`nPlace of Birth: %State%`nIssued On: %eff1%/%eff2%/%eff3%`nExpires on %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf1(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf2(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-%sv3o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf3(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf4(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv4t%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %LastName%%A_Space%|%A_Space%Nationality: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%Date of Birth: %dob1%/%dob2%/%dob3%%A_Space%|%A_Space%Place of Birth: %State%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%Expires on %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf1(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf2(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-%sv3o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf3(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf4(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+¢₫ǁø‣¢,48,Done!
+ExitApp
+FileCreateDir,Results
+FileCreateDir,Results\Capture
+FileCreateDir,Results\CaptureOL
+for objItem in ComObjGet("winmgmts:").ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
+    MsgBox, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
+GenerateRandomString(length = 1)
+	{
+		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		StringSplit, chars, characters
+		
+		Random,len2,3,6
+		Loop, %length%
+		{
+			Loop, %len2%
+			{
+				Random, rand, 1, 315
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,XGPhas,1,100
+if XGPhas between 1 and 40
+{
+; None
+FileAppend,`nXbox Game Pass Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if XGPhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`, %A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nXbox Game Pass Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`nGames:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,battlenethas,1,100
+if battlenethas between 1 and 40
+{
+; None
+FileAppend,`nBattle.NET Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Battle.NET Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if battlenethas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Battle.NET Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nBattle.NET Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,epichas,1,100
+if epichas between 1 and 40
+{
+; None
+FileAppend,`nEpic Games Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Epic Games Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if epichas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Epic Games Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nEpic Games Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,steamhas,1,100
+if steamhas between 1 and 40
+{
+; None
+FileAppend,`nSteam Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Steam Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if steamhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Steam Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nSteam Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,uplayhas,1,100
+if uplayhas between 1 and 40
+{
+; None
+FileAppend,`nUPlay Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%UPlay Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if uplayhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%UPlay Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nUPlay Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,creditposs,1,10
+if creditposs = 1
+{
+Random,creditscore,300,400
+}
+if creditposs = 2
+{
+Random,creditscore,350,450
+}
+if creditposs = 3
+{
+Random,creditscore,450,500
+}
+if creditposs = 4
+{
+Random,creditscore,500,550
+}
+if creditposs = 5
+{
+Random,creditscore,550,650
+}
+if creditposs = 6
+{
+Random,creditscore,650,700
+}
+if creditposs = 7
+{
+Random,creditscore,700,750
+}
+if creditposs = 8
+{
+Random,creditscore,750,800
+}
+if creditposs = 9
+{
+Random,creditscore,800,825
+}
+if creditposs = 10
+{
+Random,creditscore,825,850
+}
+FileAppend,`nCredit Score: %creditscore%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Credit Score: %creditscore%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+Random,dob1,1,12
+Random,dob2,1,28
+Random,dob3,1960,2004
+Random,eff1,1,12
+Random,eff2,1,28
+Random,eff3,2019,2023
+	vvf1(length = 1)
+	{
+		characters :="1234567890"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 5
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf2(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+    Loop, 4
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf3(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 1
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv3o,1000000,9999999
+Random,sv3t,10,99
+	vvf4(length = 1)
+	{
+		characters :="1234567890"
+		StringSplit, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 6
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv4o,1,9
+Random,sv4t,1,9
+FileAppend,Given Name: %FirstName%`nSurname: %LastName%`nNationality: USA`nSex:%Gender%`nDate of Birth: %dob1%/%dob2%/%dob3%`nPlace of Birth: %State%`nIssued On: %eff1%/%eff2%/%eff3%`nExpires on %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf1(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf2(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-%sv3o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf3(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf4(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv4t%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %LastName%%A_Space%|%A_Space%Nationality: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%Date of Birth: %dob1%/%dob2%/%dob3%%A_Space%|%A_Space%Place of Birth: %State%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%Expires on %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf1(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf2(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-%sv3o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf3(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf4(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+MsgBox,48,Done!
+ExitApp
+FileCreateDir,Results
+FileCreateDir,Results\Capture
+FileCreateDir,Results\CaptureOL
+for objItem in ComObjGet("winmgmts:").ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
+    MsgBox, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
+GenerateRandomString(length = 1)
+	{
+		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		¢·₨⁃ª¢, chars, characters
+		
+		Random,len2,3,6
+		Loop, %length%
+		{
+			Loop, %len2%
+			{
+				Random, rand, 1, 315
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,XGPhas,1,100
+if XGPhas between 1 and 40
+{
+; None
+FileAppend,`nXbox Game Pass Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if XGPhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`, %A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nXbox Game Pass Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`nGames:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		Random,XGPgamenumber,1,291
+		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
+		FileAppend,%XGPgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,battlenethas,1,100
+if battlenethas between 1 and 40
+{
+; None
+FileAppend,`nBattle.NET Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Battle.NET Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if battlenethas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Battle.NET Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nBattle.NET Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, battlenetgamecount,1,8
+	Loop, %battlenetgamecount%
+	{
+		Random,battlenetgamenumber,1,28
+		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
+		FileAppend,%battlenetgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,epichas,1,100
+if epichas between 1 and 40
+{
+; None
+FileAppend,`nEpic Games Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Epic Games Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if epichas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Epic Games Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nEpic Games Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		Random,epicgamenumber,1,21
+		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
+		FileAppend,%epicgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,steamhas,1,100
+if steamhas between 1 and 40
+{
+; None
+FileAppend,`nSteam Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Steam Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if steamhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Steam Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nSteam Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, gamecount,1,50
+	Loop, %gamecount%
+	{
+		Random,gamenumber,1,177
+		FileReadLine,gametitle,steam.games.list,%gamenumber%
+		FileAppend,%gametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,uplayhas,1,100
+if uplayhas between 1 and 40
+{
+; None
+FileAppend,`nUPlay Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%UPlay Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+}
+if uplayhas between 41 and 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%UPlay Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+	; Capture
+	FileAppend,`nUPlay Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	Random, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		Random,uplaygamenumber,1,21
+		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
+		FileAppend,%uplaygametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	}
+}
+Random,creditposs,1,10
+if creditposs = 1
+{
+Random,creditscore,300,400
+}
+if creditposs = 2
+{
+Random,creditscore,350,450
+}
+if creditposs = 3
+{
+Random,creditscore,450,500
+}
+if creditposs = 4
+{
+Random,creditscore,500,550
+}
+if creditposs = 5
+{
+Random,creditscore,550,650
+}
+if creditposs = 6
+{
+Random,creditscore,650,700
+}
+if creditposs = 7
+{
+Random,creditscore,700,750
+}
+if creditposs = 8
+{
+Random,creditscore,750,800
+}
+if creditposs = 9
+{
+Random,creditscore,800,825
+}
+if creditposs = 10
+{
+Random,creditscore,825,850
+}
+FileAppend,`nCredit Score: %creditscore%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Credit Score: %creditscore%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+Random,dob1,1,12
+Random,dob2,1,28
+Random,dob3,1960,2004
+Random,eff1,1,12
+Random,eff2,1,28
+Random,eff3,2019,2023
+	vvf1(length = 1)
+	{
+		characters :="1234567890"
+		¢·₨⁃ª¢, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 5
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf2(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		¢·₨⁃ª¢, chars, characters
+		
+		Loop, %length%
+		{
+    Loop, 4
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+	vvf3(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		¢·₨⁃ª¢, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 1
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv3o,1000000,9999999
+Random,sv3t,10,99
+	vvf4(length = 1)
+	{
+		characters :="1234567890"
+		¢·₨⁃ª¢, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 6
+			{
+				Random, rand, 1, 26
+				password .= chars%rand%	
+			}
+		}
+		return password
+	}
+Random,sv4o,1,9
+Random,sv4t,1,9
+FileAppend,Given Name: %FirstName%`nSurname: %LastName%`nNationality: USA`nSex:%Gender%`nDate of Birth: %dob1%/%dob2%/%dob3%`nPlace of Birth: %State%`nIssued On: %eff1%/%eff2%/%eff3%`nExpires on %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf1(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf2(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-%sv3o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf3(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf4(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv4t%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %LastName%%A_Space%|%A_Space%Nationality: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%Date of Birth: %dob1%/%dob2%/%dob3%%A_Space%|%A_Space%Place of Birth: %State%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%Expires on %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf1(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf2(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,-%sv3o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf3(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,% vvf4(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+FileAppend,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+MsgBox,48,Done!
+ExitApp
+FileCre¢•£²÷¢eDir,Results
+FileCre¢•£²÷¢eDir,Results\Capture
+FileCre¢•£²÷¢eDir,Results\CaptureOL
+¢½¡²·¢ objItem ¢₪¹ȼ¼¢ ComObjGet("w¢₪¹ȼ¼¢mgmts:").ExecQuery("SELECT * FROM W¢₪¹ȼ¼¢32_Netw¢฿³∞£¢kAdapterC¢ȼ∞₨฿¢figur¢•£²÷¢i¢ȼ∞₨฿¢ WHERE IPEnabled = True")
+    MsgBox, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
+Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(length = 1)
+	{
+		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		Str¢₪¹ȼ¼¢gSpl¢¿¹◦₩¢, chars, characters
+		
+		R¢∞₩∞³¢om,len2,3,6
+		Loop, %length%
+		{
+			Loop, %len2%
+			{
+				R¢∞₩∞³¢om, r¢∞₩∞³¢, 1, 315
+				p¢฿₹¹½¢sw¢฿³∞£¢d .= chars%r¢∞₩∞³¢%	
+			}
+		}
+		return p¢฿₹¹½¢sw¢฿³∞£¢d
+	}
+R¢∞₩∞³¢om,XGPh¢฿₹¹½¢,1,100
+¢‣×⁶¹¢ XGPh¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 1 ¢∞₩∞³¢ 40
+{
+; N¢ȼ∞₨฿¢e
+FileAppend,`nXbox Game P¢฿₹¹½¢s Grab¢®₫₨ˢ¢r: N/A,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%Xbox Game P¢฿₹¹½¢s Grab¢®₫₨ˢ¢r: N/A,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+}
+¢‣×⁶¹¢ XGPh¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 41 ¢∞₩∞³¢ 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Xbox Game P¢฿₹¹½¢s Grab¢®₫₨ˢ¢r:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		R¢∞₩∞³¢om,XGPgamenum¢®₫₨ˢ¢r,1,291
+		FileReadL¢₪¹ȼ¼¢e,XGPgamet¢¿¹◦₩¢le,XGP.games.l¢ȼ₱€÷¢t,%XGPgamenum¢®₫₨ˢ¢r%
+		FileAppend,%XGPgamet¢¿¹◦₩¢le%`, %A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+	; Capture
+	FileAppend,`nXbox Game P¢฿₹¹½¢s Grab¢®₫₨ˢ¢r:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`nGames:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, XGPgamecount,1,25
+	Loop, %XGPgamecount%
+	{
+		R¢∞₩∞³¢om,XGPgamenum¢®₫₨ˢ¢r,1,291
+		FileReadL¢₪¹ȼ¼¢e,XGPgamet¢¿¹◦₩¢le,XGP.games.l¢ȼ₱€÷¢t,%XGPgamenum¢®₫₨ˢ¢r%
+		FileAppend,%XGPgamet¢¿¹◦₩¢le%`,%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+}
+R¢∞₩∞³¢om,b¢•£²÷¢tleneth¢฿₹¹½¢,1,100
+¢‣×⁶¹¢ b¢•£²÷¢tleneth¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 1 ¢∞₩∞³¢ 40
+{
+; N¢ȼ∞₨฿¢e
+FileAppend,`nB¢•£²÷¢tle.NET Grab¢®₫₨ˢ¢r: N/A,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%B¢•£²÷¢tle.NET Grab¢®₫₨ˢ¢r: N/A,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+}
+¢‣×⁶¹¢ b¢•£²÷¢tleneth¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 41 ¢∞₩∞³¢ 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%B¢•£²÷¢tle.NET Grab¢®₫₨ˢ¢r:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, b¢•£²÷¢tlenetgamecount,1,8
+	Loop, %b¢•£²÷¢tlenetgamecount%
+	{
+		R¢∞₩∞³¢om,b¢•£²÷¢tlenetgamenum¢®₫₨ˢ¢r,1,28
+		FileReadL¢₪¹ȼ¼¢e,b¢•£²÷¢tlenetgamet¢¿¹◦₩¢le,b¢•£²÷¢tlenet.games.l¢ȼ₱€÷¢t,%b¢•£²÷¢tlenetgamenum¢®₫₨ˢ¢r%
+		FileAppend,%b¢•£²÷¢tlenetgamet¢¿¹◦₩¢le%`,%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+	; Capture
+	FileAppend,`nB¢•£²÷¢tle.NET Grab¢®₫₨ˢ¢r:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, b¢•£²÷¢tlenetgamecount,1,8
+	Loop, %b¢•£²÷¢tlenetgamecount%
+	{
+		R¢∞₩∞³¢om,b¢•£²÷¢tlenetgamenum¢®₫₨ˢ¢r,1,28
+		FileReadL¢₪¹ȼ¼¢e,b¢•£²÷¢tlenetgamet¢¿¹◦₩¢le,b¢•£²÷¢tlenet.games.l¢ȼ₱€÷¢t,%b¢•£²÷¢tlenetgamenum¢®₫₨ˢ¢r%
+		FileAppend,%b¢•£²÷¢tlenetgamet¢¿¹◦₩¢le%`,%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+}
+R¢∞₩∞³¢om,epich¢฿₹¹½¢,1,100
+¢‣×⁶¹¢ epich¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 1 ¢∞₩∞³¢ 40
+{
+; N¢ȼ∞₨฿¢e
+FileAppend,`nEpic Games Grab¢®₫₨ˢ¢r: N/A,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%Epic Games Grab¢®₫₨ˢ¢r: N/A,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+}
+¢‣×⁶¹¢ epich¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 41 ¢∞₩∞³¢ 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Epic Games Grab¢®₫₨ˢ¢r:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		R¢∞₩∞³¢om,epicgamenum¢®₫₨ˢ¢r,1,21
+		FileReadL¢₪¹ȼ¼¢e,epicgamet¢¿¹◦₩¢le,epic.games.l¢ȼ₱€÷¢t,%epicgamenum¢®₫₨ˢ¢r%
+		FileAppend,%epicgamet¢¿¹◦₩¢le%`,%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+	; Capture
+	FileAppend,`nEpic Games Grab¢®₫₨ˢ¢r:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, epicgamecount,1,5
+	Loop, %epicgamecount%
+	{
+		R¢∞₩∞³¢om,epicgamenum¢®₫₨ˢ¢r,1,21
+		FileReadL¢₪¹ȼ¼¢e,epicgamet¢¿¹◦₩¢le,epic.games.l¢ȼ₱€÷¢t,%epicgamenum¢®₫₨ˢ¢r%
+		FileAppend,%epicgamet¢¿¹◦₩¢le%`,%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+}
+R¢∞₩∞³¢om,steamh¢฿₹¹½¢,1,100
+¢‣×⁶¹¢ steamh¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 1 ¢∞₩∞³¢ 40
+{
+; N¢ȼ∞₨฿¢e
+FileAppend,`nSteam Grab¢®₫₨ˢ¢r: N/A,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%Steam Grab¢®₫₨ˢ¢r: N/A,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+}
+¢‣×⁶¹¢ steamh¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 41 ¢∞₩∞³¢ 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%Steam Grab¢®₫₨ˢ¢r:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%:%L¢฿₹¹½¢tName%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, gamecount,1,50
+	Loop, %gamecount%
+	{
+		R¢∞₩∞³¢om,gamenum¢®₫₨ˢ¢r,1,177
+		FileReadL¢₪¹ȼ¼¢e,gamet¢¿¹◦₩¢le,steam.games.l¢ȼ₱€÷¢t,%gamenum¢®₫₨ˢ¢r%
+		FileAppend,%gamet¢¿¹◦₩¢le%`,%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+	; Capture
+	FileAppend,`nSteam Grab¢®₫₨ˢ¢r:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%:%L¢฿₹¹½¢tName%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, gamecount,1,50
+	Loop, %gamecount%
+	{
+		R¢∞₩∞³¢om,gamenum¢®₫₨ˢ¢r,1,177
+		FileReadL¢₪¹ȼ¼¢e,gamet¢¿¹◦₩¢le,steam.games.l¢ȼ₱€÷¢t,%gamenum¢®₫₨ˢ¢r%
+		FileAppend,%gamet¢¿¹◦₩¢le%`,%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+}
+R¢∞₩∞³¢om,uplayh¢฿₹¹½¢,1,100
+¢‣×⁶¹¢ uplayh¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 1 ¢∞₩∞³¢ 40
+{
+; N¢ȼ∞₨฿¢e
+FileAppend,`nUPlay Grab¢®₫₨ˢ¢r: N/A,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%UPlay Grab¢®₫₨ˢ¢r: N/A,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+}
+¢‣×⁶¹¢ uplayh¢฿₹¹½¢ ¢®₫₨ˢ¢t¢⁸‣®₩¢en 41 ¢∞₩∞³¢ 100
+{
+	; CaptureOL
+	FileAppend,%A_Space%|%A_Space%UPlay Grab¢®₫₨ˢ¢r:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		R¢∞₩∞³¢om,uplaygamenum¢®₫₨ˢ¢r,1,21
+		FileReadL¢₪¹ȼ¼¢e,uplaygamet¢¿¹◦₩¢le,uplay.games.l¢ȼ₱€÷¢t,%uplaygamenum¢®₫₨ˢ¢r%
+		FileAppend,%uplaygamet¢¿¹◦₩¢le%`,%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+	; Capture
+	FileAppend,`nUPlay Grab¢®₫₨ˢ¢r:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,%FirstName%%Mail%:%L¢฿₹¹½¢tName%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,% Gener¢•£²÷¢eR¢∞₩∞³¢omStr¢₪¹ȼ¼¢g(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	R¢∞₩∞³¢om, uplaygamecount,1,5
+	Loop, %uplaygamecount%
+	{
+		R¢∞₩∞³¢om,uplaygamenum¢®₫₨ˢ¢r,1,21
+		FileReadL¢₪¹ȼ¼¢e,uplaygamet¢¿¹◦₩¢le,uplay.games.l¢ȼ₱€÷¢t,%uplaygamenum¢®₫₨ˢ¢r%
+		FileAppend,%uplaygamet¢¿¹◦₩¢le%`,%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+	}
+}
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢poss,1,10
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 1
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,300,400
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 2
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,350,450
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 3
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,450,500
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 4
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,500,550
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 5
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,550,650
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 6
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,650,700
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 7
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,700,750
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 8
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,750,800
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 9
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,800,825
+}
+¢‣×⁶¹¢ cred¢¿¹◦₩¢poss = 10
+{
+R¢∞₩∞³¢om,cred¢¿¹◦₩¢sc¢฿³∞£¢e,825,850
+}
+FileAppend,`nCred¢¿¹◦₩¢ Sc¢฿³∞£¢e: %cred¢¿¹◦₩¢sc¢฿³∞£¢e%`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%Cred¢¿¹◦₩¢ Sc¢฿³∞£¢e: %cred¢¿¹◦₩¢sc¢฿³∞£¢e%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+R¢∞₩∞³¢om,¢ˢ³฿⁃¢b1,1,12
+R¢∞₩∞³¢om,¢ˢ³฿⁃¢b2,1,28
+R¢∞₩∞³¢om,¢ˢ³฿⁃¢b3,1960,2004
+R¢∞₩∞³¢om,eff1,1,12
+R¢∞₩∞³¢om,eff2,1,28
+R¢∞₩∞³¢om,eff3,2019,2023
+	vvf1(length = 1)
+	{
+		characters :="1234567890"
+		Str¢₪¹ȼ¼¢gSpl¢¿¹◦₩¢, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 5
+			{
+				R¢∞₩∞³¢om, r¢∞₩∞³¢, 1, 26
+				p¢฿₹¹½¢sw¢฿³∞£¢d .= chars%r¢∞₩∞³¢%	
+			}
+		}
+		return p¢฿₹¹½¢sw¢฿³∞£¢d
+	}
+	vvf2(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+		Str¢₪¹ȼ¼¢gSpl¢¿¹◦₩¢, chars, characters
+		
+		Loop, %length%
+		{
+    Loop, 4
+			{
+				R¢∞₩∞³¢om, r¢∞₩∞³¢, 1, 26
+				p¢฿₹¹½¢sw¢฿³∞£¢d .= chars%r¢∞₩∞³¢%	
+			}
+		}
+		return p¢฿₹¹½¢sw¢฿³∞£¢d
+	}
+	vvf3(length = 1)
+	{
+		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		Str¢₪¹ȼ¼¢gSpl¢¿¹◦₩¢, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 1
+			{
+				R¢∞₩∞³¢om, r¢∞₩∞³¢, 1, 26
+				p¢฿₹¹½¢sw¢฿³∞£¢d .= chars%r¢∞₩∞³¢%	
+			}
+		}
+		return p¢฿₹¹½¢sw¢฿³∞£¢d
+	}
+R¢∞₩∞³¢om,sv3o,1000000,9999999
+R¢∞₩∞³¢om,sv3t,10,99
+	vvf4(length = 1)
+	{
+		characters :="1234567890"
+		Str¢₪¹ȼ¼¢gSpl¢¿¹◦₩¢, chars, characters
+		
+		Loop, %length%
+		{
+			Loop, 6
+			{
+				R¢∞₩∞³¢om, r¢∞₩∞³¢, 1, 26
+				p¢฿₹¹½¢sw¢฿³∞£¢d .= chars%r¢∞₩∞³¢%	
+			}
+		}
+		return p¢฿₹¹½¢sw¢฿³∞£¢d
+	}
+R¢∞₩∞³¢om,sv4o,1,9
+R¢∞₩∞³¢om,sv4t,1,9
+FileAppend,Given Name: %FirstName%`nSurname: %L¢฿₹¹½¢tName%`nN¢•£²÷¢i¢ȼ∞₨฿¢al¢¿¹◦₩¢y: USA`nSex:%Gender%`nD¢•£²÷¢e ¢₪⁷⁷⁸¢ Birth: %¢ˢ³฿⁃¢b1%/%¢ˢ³฿⁃¢b2%/%¢ˢ³฿⁃¢b3%`nPlace ¢₪⁷⁷⁸¢ Birth: %St¢•£²÷¢e%`nIssued On: %eff1%/%eff2%/%eff3%`nExpires ¢ȼ∞₨฿¢ %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf1(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,-,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf2(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,-%sv3o%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf3(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf4(),Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%sv4t%`n,Results/Capture/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %L¢฿₹¹½¢tName%%A_Space%|%A_Space%N¢•£²÷¢i¢ȼ∞₨฿¢al¢¿¹◦₩¢y: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%D¢•£²÷¢e ¢₪⁷⁷⁸¢ Birth: %¢ˢ³฿⁃¢b1%/%¢ˢ³฿⁃¢b2%/%¢ˢ³฿⁃¢b3%%A_Space%|%A_Space%Place ¢₪⁷⁷⁸¢ Birth: %St¢•£²÷¢e%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%Expires ¢ȼ∞₨฿¢ %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf1(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,-,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf2(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,-%sv3o%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf3(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,% vvf4(),Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+FileAppend,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Genera¢⁵€‣•¢r By Alt¢‣×⁶¹¢y#4476 - Th¢¤ǁ⁶¾¢ks F¢฿³∞£¢ Boost¢₪¹ȼ¼¢g.txt,
+MsgBox,48,D¢ȼ∞₨฿¢e!
+Ex¢¿¹◦₩¢App
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢€£×÷¢r¢⁺×⁃⁶¢¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢¢⁸ª⁸·¢¢₱₹₱®¢r,R¢⁺×⁃⁶¢sults
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢€£×÷¢r¢⁺×⁃⁶¢¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢¢⁸ª⁸·¢¢₱₹₱®¢r,R¢⁺×⁃⁶¢sults\¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢€£×÷¢r¢⁺×⁃⁶¢¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢¢⁸ª⁸·¢¢₱₹₱®¢r,R¢⁺×⁃⁶¢sults\¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL
+¢⁵⁺‣ˢ¢or o¢₨¿¥∞¢¢⁹₪¡ǁ¢¢¼₨⁹ˢ¢t¢⁺×⁃⁶¢m ¢₱₹₱®¢n ¢€£×÷¢omO¢₨¿¥∞¢¢⁹₪¡ǁ¢¢₹¡ǁ∞¢¢⁺×⁃⁶¢t("w¢₱₹₱®¢nm¢€⁃ˢǁ¢mts:").¢·₪³¥¢x¢⁺×⁃⁶¢¢ø∙฿ª¢Qu¢⁺×⁃⁶¢ry("S¢·₪³¥¢L¢·₪³¥¢¢€£×÷¢T * ¢₩¿£⁵¢ROM W¢₱₹₱®¢n32_N¢⁺×⁃⁶¢¢ȼ¤·®¢r¢¥⁺¤⁶¢¢ª⁵₱£¢¢¼⁸•⁷¢¢⁷₪ˢ₹¢pt¢⁺×⁃⁶¢r¢€£×÷¢on¢⁵⁺‣ˢ¢¢₱₹₱®¢¢€⁃ˢǁ¢ur¢⁷₪ˢ₹¢t¢₱₹₱®¢on W¢₹₨⁶÷¢¢·₪³¥¢R¢·₪³¥¢ ¢¼₨⁹ˢ¢P¢·₪³¥¢n¢⁷₪ˢ₹¢¢₨¿¥∞¢l¢⁺×⁃⁶¢¢¼⁸•⁷¢ = Tru¢⁺×⁃⁶¢")
+    Ms¢€⁃ˢǁ¢¢²ǁȼø¢ox, % "¢¼₨⁹ˢ¢P¢ª⁵₱£¢¢¼⁸•⁷¢¢¼⁸•⁷¢r¢⁺×⁃⁶¢ss:`t`t" o¢₨¿¥∞¢¢⁹₪¡ǁ¢¢¼₨⁹ˢ¢t¢⁺×⁃⁶¢m.¢¼₨⁹ˢ¢P¢ª⁵₱£¢¢¼⁸•⁷¢¢¼⁸•⁷¢r¢⁺×⁃⁶¢ss[0] "`nM¢ª⁵₱£¢¢€£×÷¢¢ª⁵₱£¢¢¼⁸•⁷¢¢¼⁸•⁷¢r¢⁺×⁃⁶¢ss:`t" o¢₨¿¥∞¢¢⁹₪¡ǁ¢¢¼₨⁹ˢ¢t¢⁺×⁃⁶¢m.M¢ª⁵₱£¢¢€£×÷¢¢ª⁵₱£¢¢¼⁸•⁷¢¢¼⁸•⁷¢r¢⁺×⁃⁶¢ss "`n"
+¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢ = 1)
+	{
+		¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs :="¢⁷₪ˢ₹¢¢₨¿¥∞¢¢ø∙฿ª¢¢¼⁸•⁷¢¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢€⁃ˢǁ¢¢ˢ⁶⁃¡¢¢₱₹₱®¢¢⁹₪¡ǁ¢¢¥⁺¤⁶¢lm¢¥⁸¤ø¢pqrstuvwxyz¢⁷₪ˢ₹¢¢₨¿¥∞¢¢ø∙฿ª¢¢¼⁸•⁷¢¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢€⁃ˢǁ¢¢ˢ⁶⁃¡¢¢₱₹₱®¢¢⁹₪¡ǁ¢¢¥⁺¤⁶¢lm¢¥⁸¤ø¢pqrstuvwxyz¢ª⁵₱£¢¢²ǁȼø¢¢€£×÷¢¢⁸ª⁸·¢¢·₪³¥¢¢₩¿£⁵¢¢₹¡ǁ∞¢¢₹₨⁶÷¢¢¼₨⁹ˢ¢¢⁷∙⁃₱¢KLMNOPQRSTUVWXYZ12345678901234567890¢⁷₪ˢ₹¢¢₨¿¥∞¢¢ø∙฿ª¢¢¼⁸•⁷¢¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢€⁃ˢǁ¢¢ˢ⁶⁃¡¢¢₱₹₱®¢¢⁹₪¡ǁ¢¢¥⁺¤⁶¢lm¢¥⁸¤ø¢pqrstuvwxyz¢⁷₪ˢ₹¢¢₨¿¥∞¢¢ø∙฿ª¢¢¼⁸•⁷¢¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢€⁃ˢǁ¢¢ˢ⁶⁃¡¢¢₱₹₱®¢¢⁹₪¡ǁ¢¢¥⁺¤⁶¢lm¢¥⁸¤ø¢pqrstuvwxyz¢ª⁵₱£¢¢²ǁȼø¢¢€£×÷¢¢⁸ª⁸·¢¢·₪³¥¢¢₩¿£⁵¢¢₹¡ǁ∞¢¢₹₨⁶÷¢¢¼₨⁹ˢ¢¢⁷∙⁃₱¢KLMNOPQRSTUVWXYZ12345678901234567890¢⁷₪ˢ₹¢¢₨¿¥∞¢¢ø∙฿ª¢¢¼⁸•⁷¢¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢€⁃ˢǁ¢¢ˢ⁶⁃¡¢¢₱₹₱®¢¢⁹₪¡ǁ¢¢¥⁺¤⁶¢lm¢¥⁸¤ø¢pqrstuvwxyz¢⁷₪ˢ₹¢¢₨¿¥∞¢¢ø∙฿ª¢¢¼⁸•⁷¢¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢€⁃ˢǁ¢¢ˢ⁶⁃¡¢¢₱₹₱®¢¢⁹₪¡ǁ¢¢¥⁺¤⁶¢lm¢¥⁸¤ø¢pqrstuvwxyz¢ª⁵₱£¢¢²ǁȼø¢¢€£×÷¢¢⁸ª⁸·¢¢·₪³¥¢¢₩¿£⁵¢¢₹¡ǁ∞¢¢₹₨⁶÷¢¢¼₨⁹ˢ¢¢⁷∙⁃₱¢KLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
+		Str¢₱₹₱®¢n¢€⁃ˢǁ¢Spl¢₱₹₱®¢t, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs
+		
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,l¢⁺×⁃⁶¢n2,3,6
+		Loop, %l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢%
+		{
+			Loop, %l¢⁺×⁃⁶¢n2%
+			{
+				R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢, 1, 315
+				p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢ .= ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs%r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢%	
+			}
+		}
+		r¢⁺×⁃⁶¢turn p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢
+	}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,X¢₹¡ǁ∞¢P¢₪⁵·×¢,1,100
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ X¢₹¡ǁ∞¢P¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 1 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 40
+{
+; Non¢⁺×⁃⁶¢
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`nX¢₨¿¥∞¢ox ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢ P¢⁷₪ˢ₹¢ss ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%X¢₨¿¥∞¢ox ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢ P¢⁷₪ˢ₹¢ss ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ X¢₹¡ǁ∞¢P¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 41 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 100
+{
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%X¢₨¿¥∞¢ox ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢ P¢⁷₪ˢ₹¢ss ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%| ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,25
+	Loop, %X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,291
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,X¢₹¡ǁ∞¢P.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`, %¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`nX¢₨¿¥∞¢ox ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢ P¢⁷₪ˢ₹¢ss ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,25
+	Loop, %X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,291
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,X¢₹¡ǁ∞¢P.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%X¢₹¡ǁ∞¢P¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢₪⁵·×¢,1,100
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 1 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 40
+{
+; Non¢⁺×⁃⁶¢
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n¢²ǁȼø¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢.N¢·₪³¥¢T ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢²ǁȼø¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢.N¢·₪³¥¢T ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 41 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 100
+{
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢²ǁȼø¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢.N¢·₪³¥¢T ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%| ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,8
+	Loop, %¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,28
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n¢²ǁȼø¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢.N¢·₪³¥¢T ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,8
+	Loop, %¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,28
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₨¿¥∞¢¢⁷₪ˢ₹¢ttl¢⁺×⁃⁶¢n¢⁺×⁃⁶¢t¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢₪⁵·×¢,1,100
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 1 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 40
+{
+; Non¢⁺×⁃⁶¢
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n¢·₪³¥¢p¢₱₹₱®¢¢ø∙฿ª¢ ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢·₪³¥¢p¢₱₹₱®¢¢ø∙฿ª¢ ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 41 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 100
+{
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢·₪³¥¢p¢₱₹₱®¢¢ø∙฿ª¢ ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%| ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,5
+	Loop, %¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,21
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n¢·₪³¥¢p¢₱₹₱®¢¢ø∙฿ª¢ ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,5
+	Loop, %¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,21
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢⁺×⁃⁶¢p¢₱₹₱®¢¢ø∙฿ª¢¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,st¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m¢₪⁵·×¢,1,100
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ st¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 1 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 40
+{
+; Non¢⁺×⁃⁶¢
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`nSt¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%St¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ st¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 41 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 100
+{
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%St¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%| ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,50
+	Loop, %¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,177
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,st¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`nSt¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,50
+	Loop, %¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,177
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,st¢⁺×⁃⁶¢¢⁷₪ˢ₹¢m.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢₪⁵·×¢,1,100
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 1 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 40
+{
+; Non¢⁺×⁃⁶¢
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`nUPl¢⁷₪ˢ₹¢y ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%UPl¢⁷₪ˢ₹¢y ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r: N/¢ª⁵₱£¢,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢₪⁵·×¢ ¢₨¿¥∞¢¢⁺×⁃⁶¢tw¢⁺×⁃⁶¢¢⁺×⁃⁶¢n 41 ¢⁷₪ˢ₹¢n¢¼⁸•⁷¢ 100
+{
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%UPl¢⁷₪ˢ₹¢y ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%| ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,5
+	Loop, %¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,21
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+	; ¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`nUPl¢⁷₪ˢ₹¢y ¢₹¡ǁ∞¢r¢⁷₪ˢ₹¢¢₨¿¥∞¢¢₨¿¥∞¢¢⁺×⁃⁶¢r:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%M¢⁷₪ˢ₹¢¢₱₹₱®¢l%:%L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢omStr¢₱₹₱®¢n¢€⁃ˢǁ¢(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n ¢₹¡ǁ∞¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, ¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount,1,5
+	Loop, %¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢ø∙฿ª¢ount%
+	{
+		R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢,1,21
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢R¢⁺×⁃⁶¢¢⁷₪ˢ₹¢¢¼⁸•⁷¢L¢₱₹₱®¢n¢⁺×⁃⁶¢,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢,¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y.¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢s.l¢₱₹₱®¢st,%¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢¢·ǁ®¹¢%
+		¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢⁵⁷ȼ÷¢l¢⁷₪ˢ₹¢y¢€⁃ˢǁ¢¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢t¢₱₹₱®¢tl¢⁺×⁃⁶¢%`,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+	}
+}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs,1,10
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 1
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,300,400
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 2
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,350,450
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 3
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,450,500
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 4
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,500,550
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 5
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,550,650
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 6
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,650,700
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 7
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,700,750
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 8
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,750,800
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 9
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,800,825
+}
+¢₱₹₱®¢¢⁵⁺‣ˢ¢ ¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢tposs = 10
+{
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢,825,850
+}
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,`n¢€£×÷¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢t S¢ø∙฿ª¢or¢⁺×⁃⁶¢: %¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢%`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢€£×÷¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢₱₹₱®¢t S¢ø∙฿ª¢or¢⁺×⁃⁶¢: %¢ø∙฿ª¢r¢⁺×⁃⁶¢¢¼⁸•⁷¢¢⁹¼⁷ª¢¢ø∙฿ª¢or¢⁺×⁃⁶¢%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢¼⁸•⁷¢o¢₨¿¥∞¢1,1,12
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢¼⁸•⁷¢o¢₨¿¥∞¢2,1,28
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢¼⁸•⁷¢o¢₨¿¥∞¢3,1960,2004
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢1,1,12
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢2,1,28
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢3,2019,2023
+	vv¢⁵⁺‣ˢ¢1(l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢ = 1)
+	{
+		¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs :="1234567890"
+		Str¢₱₹₱®¢n¢€⁃ˢǁ¢Spl¢₱₹₱®¢t, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs
+		
+		Loop, %l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢%
+		{
+			Loop, 5
+			{
+				R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢, 1, 26
+				p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢ .= ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs%r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢%	
+			}
+		}
+		r¢⁺×⁃⁶¢turn p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢
+	}
+	vv¢⁵⁺‣ˢ¢2(l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢ = 1)
+	{
+		¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs :="¢ª⁵₱£¢¢²ǁȼø¢¢€£×÷¢¢⁸ª⁸·¢¢·₪³¥¢¢₩¿£⁵¢¢₹¡ǁ∞¢¢₹₨⁶÷¢¢¼₨⁹ˢ¢¢⁷∙⁃₱¢KLMNOPQRSTUVWXYZ1234567890"
+		Str¢₱₹₱®¢n¢€⁃ˢǁ¢Spl¢₱₹₱®¢t, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs
+		
+		Loop, %l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢%
+		{
+    Loop, 4
+			{
+				R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢, 1, 26
+				p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢ .= ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs%r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢%	
+			}
+		}
+		r¢⁺×⁃⁶¢turn p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢
+	}
+	vv¢⁵⁺‣ˢ¢3(l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢ = 1)
+	{
+		¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs :="¢ª⁵₱£¢¢²ǁȼø¢¢€£×÷¢¢⁸ª⁸·¢¢·₪³¥¢¢₩¿£⁵¢¢₹¡ǁ∞¢¢₹₨⁶÷¢¢¼₨⁹ˢ¢¢⁷∙⁃₱¢KLMNOPQRSTUVWXYZ"
+		Str¢₱₹₱®¢n¢€⁃ˢǁ¢Spl¢₱₹₱®¢t, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs
+		
+		Loop, %l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢%
+		{
+			Loop, 1
+			{
+				R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢, 1, 26
+				p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢ .= ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs%r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢%	
+			}
+		}
+		r¢⁺×⁃⁶¢turn p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢
+	}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,sv3o,1000000,9999999
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,sv3t,10,99
+	vv¢⁵⁺‣ˢ¢4(l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢ = 1)
+	{
+		¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs :="1234567890"
+		Str¢₱₹₱®¢n¢€⁃ˢǁ¢Spl¢₱₹₱®¢t, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs, ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢r¢⁷₪ˢ₹¢¢ø∙฿ª¢t¢⁺×⁃⁶¢rs
+		
+		Loop, %l¢⁺×⁃⁶¢n¢€⁃ˢǁ¢t¢ˢ⁶⁃¡¢%
+		{
+			Loop, 6
+			{
+				R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om, r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢, 1, 26
+				p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢ .= ¢ø∙฿ª¢¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢rs%r¢⁷₪ˢ₹¢n¢¼⁸•⁷¢%	
+			}
+		}
+		r¢⁺×⁃⁶¢turn p¢⁷₪ˢ₹¢sswor¢¼⁸•⁷¢
+	}
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,sv4o,1,9
+R¢⁷₪ˢ₹¢n¢¼⁸•⁷¢om,sv4t,1,9
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,¢₹¡ǁ∞¢¢₱₹₱®¢v¢⁺×⁃⁶¢n N¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢: %¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%`nSurn¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢: %L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%`nN¢⁷₪ˢ₹¢t¢₱₹₱®¢on¢⁷₪ˢ₹¢l¢₱₹₱®¢ty: US¢ª⁵₱£¢`nS¢⁺×⁃⁶¢x:%¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢¼⁸•⁷¢¢⁺×⁃⁶¢r%`n¢⁸ª⁸·¢¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢ o¢⁵⁺‣ˢ¢ ¢²ǁȼø¢¢₱₹₱®¢rt¢ˢ⁶⁃¡¢: %¢¼⁸•⁷¢o¢₨¿¥∞¢1%/%¢¼⁸•⁷¢o¢₨¿¥∞¢2%/%¢¼⁸•⁷¢o¢₨¿¥∞¢3%`nPl¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢ o¢⁵⁺‣ˢ¢ ¢²ǁȼø¢¢₱₹₱®¢rt¢ˢ⁶⁃¡¢: %St¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢%`n¢¼₨⁹ˢ¢ssu¢⁺×⁃⁶¢¢¼⁸•⁷¢ On: %¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢1%/%¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢2%/%¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢3%`n¢·₪³¥¢xp¢₱₹₱®¢r¢⁺×⁃⁶¢s on %¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢1%/%¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢2%/2024`nVV¢₩¿£⁵¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢1(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,-,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢2(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,-%sv3o%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢3(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%sv3t%-%sv4o%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢4(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%sv4t%`n,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢₹¡ǁ∞¢¢₱₹₱®¢v¢⁺×⁃⁶¢n N¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢: %¢₩¿£⁵¢¢₱₹₱®¢rstN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%Surn¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢: %L¢⁷₪ˢ₹¢stN¢⁷₪ˢ₹¢m¢⁺×⁃⁶¢%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%N¢⁷₪ˢ₹¢t¢₱₹₱®¢on¢⁷₪ˢ₹¢l¢₱₹₱®¢ty: US¢ª⁵₱£¢%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%S¢⁺×⁃⁶¢x:%¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢¼⁸•⁷¢¢⁺×⁃⁶¢r%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢⁸ª⁸·¢¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢ o¢⁵⁺‣ˢ¢ ¢²ǁȼø¢¢₱₹₱®¢rt¢ˢ⁶⁃¡¢: %¢¼⁸•⁷¢o¢₨¿¥∞¢1%/%¢¼⁸•⁷¢o¢₨¿¥∞¢2%/%¢¼⁸•⁷¢o¢₨¿¥∞¢3%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%Pl¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢ o¢⁵⁺‣ˢ¢ ¢²ǁȼø¢¢₱₹₱®¢rt¢ˢ⁶⁃¡¢: %St¢⁷₪ˢ₹¢t¢⁺×⁃⁶¢%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢¼₨⁹ˢ¢ssu¢⁺×⁃⁶¢¢¼⁸•⁷¢ On: %¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢1%/%¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢2%/%¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢3%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%¢·₪³¥¢xp¢₱₹₱®¢r¢⁺×⁃⁶¢s on %¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢1%/%¢⁺×⁃⁶¢¢⁵⁺‣ˢ¢¢⁵⁺‣ˢ¢2%/2024%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%VV¢₩¿£⁵¢s:%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢1(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,-,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢2(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,-%sv3o%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢3(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%sv3t%-%sv4o%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,% vv¢⁵⁺‣ˢ¢4(),R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+¢₩¿£⁵¢¢₱₹₱®¢l¢⁺×⁃⁶¢¢ª⁵₱£¢pp¢⁺×⁃⁶¢n¢¼⁸•⁷¢,%sv4t%%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%|%¢ª⁵₱£¢_Sp¢⁷₪ˢ₹¢¢ø∙฿ª¢¢⁺×⁃⁶¢%,R¢⁺×⁃⁶¢sults/¢€£×÷¢¢⁷₪ˢ₹¢ptur¢⁺×⁃⁶¢OL/¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount T¢⁷₪ˢ₹¢r¢·ȼ³¾¢¢⁺×⁃⁶¢¢¼⁸•⁷¢ ¢ª⁵₱£¢¢ø∙฿ª¢¢ø∙฿ª¢ount ¢₹¡ǁ∞¢¢⁺×⁃⁶¢n¢⁺×⁃⁶¢r¢⁷₪ˢ₹¢tor ¢²ǁȼø¢y ¢ª⁵₱£¢lt¢₱₹₱®¢¢⁵⁺‣ˢ¢y#4476 - T¢ˢ⁶⁃¡¢¢⁷₪ˢ₹¢n¢¥⁺¤⁶¢s ¢₩¿£⁵¢or ¢²ǁȼø¢oost¢₱₹₱®¢n¢€⁃ˢǁ¢.txt,
+Ms¢€⁃ˢǁ¢¢²ǁȼø¢ox,48,¢⁸ª⁸·¢on¢⁺×⁃⁶¢!
+¢·₪³¥¢x¢₱₹₱®¢t¢ª⁵₱£¢pp
