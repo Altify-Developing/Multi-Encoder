@@ -79,10 +79,12 @@ if (argv.language == 'python' && argv.script !== 'undefined') {
 		})
 	}
 }
-if (argv.language == 'ahk' && argv.script !== 'undefined') {
+if (argv.language == 'default' && argv.script !== 'undefined') {
 	console.log(argv.security + 2);
-	let txt1 = `const fs = require('fs');\n` + "let txt1 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-	let txt2 = `const fs = require('fs');\n` + "let txt1 = fs.readFileSync('encoded.txt', 'utf-8')"
+	let fp5 = "./encode.txt"
+	let fp6 = "./decode.txt"
+	let txt1 = `const fs = require('fs');\nlet path = \"${fp5}\";\n` + "let txt1 = fs.readFileSync('" + argv.script + "', 'utf-8')"
+	let txt2 = `const fs = require('fs');\nlet path = \"${fp6}\";\n` + "let txt1 = fs.readFileSync('encoded.txt', 'utf-8')"
 	let fp3 = "./encode.js"
 	fs.appendFile(fp3, txt1, function(error) {
 		if (error) return log.error(error);
@@ -91,123 +93,90 @@ if (argv.language == 'ahk' && argv.script !== 'undefined') {
 	fs.appendFile(fp4, txt2, function(error) {
 		if (error) return log.error(error);
 	})
-	for (let e = 0; e < 568; e++) {
-		if (e == 567) {
+	for (let e = 0; e < 53; e++) {
+		if (e == 52) {
 			setTimeout(repp2, 1000);
 		}
-		if (e == 71) {
-			setTimeout(repp3, 100);
-		}
-		if (e == 142) {
-			setTimeout(repp4, 100);
-		}
-		if (e == 213) {
-			setTimeout(repp5, 100);
-		}
-		if (e == 284) {
-			setTimeout(repp6, 100);
-		}
-		if (e == 355) {
-			setTimeout(repp7, 100);
-		}
-		if (e == 426) {
-			setTimeout(repp8, 100);
-		}
-		if (e == 497) {
-			setTimeout(repp9, 100);
-		}
-		if (e !== 248) {
-			setTimeout(repp1, 100);
-		}
+		setTimeout(repp1, 100);
 		function repp1() {
 		var rand = randomString(argv.s + 2, '¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪');
-		var characters = ['Abs', 'AutoTrim', 'Asc', 'ASin', 'ACos', 'ATan', 'BlockInput', 'Break', 'Catch', 'Ceil', 'Chr', 'Click', 'ClipWait', 'ComObjActive', 'ComObjArray', 'ComObjConnect', 'ComObjCreate', 'ComObject', 'ComObjEnwrap', 'ComObjUnwrap', 'ComObjError', 'ComObjFlags', 'ComObjGet', 'ComObjMissing', 'ComObjParameter', 'ComObjQuery', 'ComObjType', 'ComObjValue', 'Continue', 'ControlClick', 'ControlFocus', 'ControlGetFocus', 'ControlGetPos', 'ControlGetText', 'ControlGet', 'ControlMove', 'ControlSendRaw', 'ControlSend', 'ControlSetText', 'CoordMode', 'Control', 'Cos', 'Critical', 'DetectHiddenText', 'DetectHiddenWindows', 'DllCall', 'DriveGet', 'DriveSpaceFree', 'Edit', 'Else', 'EnvAdd', 'EnvDiv', 'EnvGet', 'EnvMult', 'EnvSet', 'EnvSub', 'EnvUpdate', 'Exception', 'ExitApp', 'Exit', 'Exp', 'FileAppend', 'FileCopyDir', 'FileCopy', 'FileCreateDir', 'FileCreateShortcut', 'FileDelete', 'FileEncoding', 'FileExist', 'FileInstall', 'FileGetAttrib', 'FileGetShortcut', 'FileGetSize', 'FileGetTime', 'FileGetVersion', 'FileMoveDir', 'FileMove', 'FileOpen', 'FileReadLine', 'FileRead', 'FileRecycleEmpty', 'FileRecycle', 'FileRemoveDir', 'FileSelectFile', 'FileSelectFolder', 'FileSetAttrib', 'FileSetTime', 'Finally', 'Floor', 'For', 'FormatTime', 'Format', 'Func', 'GetKeyName', 'GetKeyVK', 'GetKeySC', 'GetKeyState', 'Gosub', 'Goto', 'GroupActivate', 'GroupAdd', 'GroupClose', 'GroupDeactivate', 'GuiControlGet', 'GuiControl', 'Gui', 'Hotkey', 'Hotstring', 'IfWinExist', 'IfWinNotExist', 'IfWinNotActive', 'IfWinActive', 'IfMsgBox', 'IfLessOrEqual', 'IfLess', 'IfNotInString', 'IfInString', 'IfGreaterOrEqual', 'IfGreater', 'IfNotExist', 'IfExist', 'IfNotEqual', 'IfEqual', 'if', 'in', 'not', 'contains', 'IL_Create', 'IL_Add', 'IL_Destroy', 'ImageSearch', 'IniDelete', 'IniRead', 'IniWrite', 'InputHook', 'InputBox', 'Input', 'InStr', 'IsByRef', 'IsFunc', 'IsLabel', 'IsObject', 'KeyHistory', 'KeyWait', 'ListHotkeys', 'ListLines', 'ListVars', 'LoadPicture', 'Log', 'Ln', 'Loop', 'LV_Add', 'LV_Delete', 'LV_DeleteCol', 'LV_GetCount', 'LV_GetNext', 'LV_GetText', 'LV_Insert', 'LV_InsertCol', 'LV_Modify', 'LV_ModifyCol', 'LV_SetImageList', 'MenuGetName', 'MenuGetHandle', 'Menu', 'Mod', 'MouseClickDrag', 'MouseClick', 'MouseGetPos', 'MouseMove', 'MsgBox', 'NumGet', 'NumPut', 'ObjAddRef', 'ObjRelease', 'ObjBindMethod', 'ObjClone', 'ObjCount', 'ObjDelete', 'ObjGetAddress', 'ObjGetCapacity', 'ObjHasKey', 'ObjInsertAt', 'ObjInsert', 'ObjLength', 'ObjMaxIndex', 'ObjMinIndex', 'Min', 'Max', 'ObjNewEnum', 'ObjPop', 'ObjPush', 'ObjRemoveAt', 'ObjRemove', 'ObjSetCapacity', 'ObjGetBase', 'ObjGetBase', 'ObjRawSet', 'ObjSetBase', 'OnClipboardChange', 'OnError', 'OnExit', 'OnExit', 'OnMessage', 'Ord', 'OutputDebug', 'Pause', 'PixelGetColor', 'PixelSearch', 'PostMessage', 'Process', 'Progress', 'Random', 'RegExMatch', 'RegExReplace', 'RegDelete', 'RegRead', 'RegWrite', 'RegisterCallback', 'Reload', 'Return', 'Round', 'RunWait', 'RunAs', 'Run', 'SB_SetText', 'SB_SetParts', 'SB_SetIcon', 'SendEvent', 'SendPlay', 'SendInput', 'SendRaw', 'SendLevel', 'SendMessage', 'SendMode', 'Send', 'SetBatchLines', 'SetCapsLockState', 'SetControlDelay', 'SetDefaultMouseSpeed', 'SetEnv', 'SetFormat', 'SetKeyDelay', 'SetMouseDelay', 'SetNumLockState', 'SetScrollLockState', 'SetRegView', 'SetStoreCapsLockMode', 'SetTimer', 'SetTitleMatchMode', 'SetWinDelay', 'SetWorkingDir', 'Shutdown', 'Sin', 'Sleep', 'Sort', 'SoundBeep', 'SoundGetWaveVolume', 'SoundGet', 'SoundPlay', 'SoundSetWaveVolume', 'SoundSet', 'SplashImage', 'SplashTextOn', 'SplashTextOff', 'SplitPath', 'Sqrt', 'StatusBarGetText', 'StatusBarWait', 'StringGetPos', 'StrGet', 'StringCaseSense', 'StringLeft', 'StringLen', 'StringLower', 'StringMid', 'StringReplace', 'StringRight', 'StringSplit', 'StringTrimLeft', 'StringTrimRight', 'StringUpper', 'StrLen', 'StrPut', 'StrReplace', 'StrSplit', 'SubStr', 'Suspend', 'Switch', 'SysGet', 'Tan', 'Thread', 'Throw', 'ToolTip', 'Transform', 'TrayTip', 'Trim', 'Try', 'TV_Add', 'TV_Delete', 'TV_Get', 'TV_GetChild', 'TV_GetCount', 'TV_GetNext', 'TV_GetParent', 'TV_GetPrev', 'TV_GetSelection', 'TV_GetText', 'TV_Modify', 'TV_SetImageList', 'Until', 'UrlDownloadToFile', 'VarSetCapacity', 'While-loop', 'WinActivateBottom', 'WinActivate', 'WinClose', 'WinExist', 'WinGetActiveStats', 'WinGetActiveTitle', 'WinGetClass', 'WinGetText', 'WinGetPos', 'WinGetTitle', 'WinGet', 'WinHide', 'WinKill', 'WinMaximize', 'WinMenuSelectItem', 'WinMinimizeAllUndo', 'WinMinimizeAll', 'WinMinimize', 'WinMove', 'WinRestore', 'WinSet', 'WinSetTitle', 'WinShow', 'WinWaitActive', 'WinWaitNotActive', 'WinWaitClose', 'WinWait', 'ClipboardTimeout', 'ClipboardTimeout', 'CommentFlag', 'Delimiter', 'DerefChar', 'ErrorStdOut', 'EscapeChar', 'HotkeyInterval', 'HotkeyModifierTimeout', 'Hotstring', 'If', 'IfTimeout', 'IfWinActive', 'IfWinNotActive', 'IfWinExist', 'IfWinNotExist', 'Include', 'IncludeAgain', 'InputLevel', 'InstallKeybdHook', 'InstallMouseHook', 'KeyHistory', 'LTrim', 'MaxHotkeysPerInterval', 'MaxMem', 'MaxThreads', 'MaxThreadsBuffer', 'MaxThreadsPerHotkey', 'MenuMaskKey', 'NoEnv', 'NoTrayIcon', 'Persistent', 'Requires', 'SingleInstance', 'UseHook', 'Warn', 'WinActivateForce', 'the', 'of', 'and', 'to', 'in', 'is', 'you', 'that', 'it', 'he', 'was', 'for', 'on', 'are', 'as', 'with', 'his', 'they', 'at', 'be', 'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'use', 'an', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'two', 'more', 'write', 'go', 'see', 'number', 'no', 'way', 'could', 'people', 'my', 'than', 'first', 'water', 'been', 'call', 'who', 'oil', 'its', 'now', 'find', 'long', 'down', 'day', 'did', 'get', 'come', 'made', 'may', 'part', 'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F', 'g', 'G', 'h', 'H', 'i', 'I', 'j', 'J', 'k', 'K', 'l', 'L', 'm', 'M', 'n', 'N', 'o', 'O', 'p', 'P', 'q', 'Q', 'r', 'R', 's', 'S', 't', 'T', 'u', 'U', 'v', 'V', 'w', 'W', 'x', 'X', 'y', 'Y', 'z', 'Z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '$', '%', '^', '&', '*', "\(", "\)", '-', '_', '=', '+', ',', '<', '.', '>', '?', ';', ':', "'", '\\\"', "\[", "\]", "\{", "\}", "|"];
+		// var characters = ['Abs', 'AutoTrim', 'Asc', 'ASin', 'ACos', 'ATan', 'BlockInput', 'Break', 'Catch', 'Ceil', 'Chr', 'Click', 'ClipWait', 'ComObjActive', 'ComObjArray', 'ComObjConnect', 'ComObjCreate', 'ComObject', 'ComObjEnwrap', 'ComObjUnwrap', 'ComObjError', 'ComObjFlags', 'ComObjGet', 'ComObjMissing', 'ComObjParameter', 'ComObjQuery', 'ComObjType', 'ComObjValue', 'Continue', 'ControlClick', 'ControlFocus', 'ControlGetFocus', 'ControlGetPos', 'ControlGetText', 'ControlGet', 'ControlMove', 'ControlSendRaw', 'ControlSend', 'ControlSetText', 'CoordMode', 'Control', 'Cos', 'Critical', 'DetectHiddenText', 'DetectHiddenWindows', 'DllCall', 'DriveGet', 'DriveSpaceFree', 'Edit', 'Else', 'EnvAdd', 'EnvDiv', 'EnvGet', 'EnvMult', 'EnvSet', 'EnvSub', 'EnvUpdate', 'Exception', 'ExitApp', 'Exit', 'Exp', 'FileAppend', 'FileCopyDir', 'FileCopy', 'FileCreateDir', 'FileCreateShortcut', 'FileDelete', 'FileEncoding', 'FileExist', 'FileInstall', 'FileGetAttrib', 'FileGetShortcut', 'FileGetSize', 'FileGetTime', 'FileGetVersion', 'FileMoveDir', 'FileMove', 'FileOpen', 'FileReadLine', 'FileRead', 'FileRecycleEmpty', 'FileRecycle', 'FileRemoveDir', 'FileSelectFile', 'FileSelectFolder', 'FileSetAttrib', 'FileSetTime', 'Finally', 'Floor', 'For', 'FormatTime', 'Format', 'Func', 'GetKeyName', 'GetKeyVK', 'GetKeySC', 'GetKeyState', 'Gosub', 'Goto', 'GroupActivate', 'GroupAdd', 'GroupClose', 'GroupDeactivate', 'GuiControlGet', 'GuiControl', 'Gui', 'Hotkey', 'Hotstring', 'IfWinExist', 'IfWinNotExist', 'IfWinNotActive', 'IfWinActive', 'IfMsgBox', 'IfLessOrEqual', 'IfLess', 'IfNotInString', 'IfInString', 'IfGreaterOrEqual', 'IfGreater', 'IfNotExist', 'IfExist', 'IfNotEqual', 'IfEqual', 'if', 'in', 'not', 'contains', 'IL_Create', 'IL_Add', 'IL_Destroy', 'ImageSearch', 'IniDelete', 'IniRead', 'IniWrite', 'InputHook', 'InputBox', 'Input', 'InStr', 'IsByRef', 'IsFunc', 'IsLabel', 'IsObject', 'KeyHistory', 'KeyWait', 'ListHotkeys', 'ListLines', 'ListVars', 'LoadPicture', 'Log', 'Ln', 'Loop', 'LV_Add', 'LV_Delete', 'LV_DeleteCol', 'LV_GetCount', 'LV_GetNext', 'LV_GetText', 'LV_Insert', 'LV_InsertCol', 'LV_Modify', 'LV_ModifyCol', 'LV_SetImageList', 'MenuGetName', 'MenuGetHandle', 'Menu', 'Mod', 'MouseClickDrag', 'MouseClick', 'MouseGetPos', 'MouseMove', 'MsgBox', 'NumGet', 'NumPut', 'ObjAddRef', 'ObjRelease', 'ObjBindMethod', 'ObjClone', 'ObjCount', 'ObjDelete', 'ObjGetAddress', 'ObjGetCapacity', 'ObjHasKey', 'ObjInsertAt', 'ObjInsert', 'ObjLength', 'ObjMaxIndex', 'ObjMinIndex', 'Min', 'Max', 'ObjNewEnum', 'ObjPop', 'ObjPush', 'ObjRemoveAt', 'ObjRemove', 'ObjSetCapacity', 'ObjGetBase', 'ObjGetBase', 'ObjRawSet', 'ObjSetBase', 'OnClipboardChange', 'OnError', 'OnExit', 'OnExit', 'OnMessage', 'Ord', 'OutputDebug', 'Pause', 'PixelGetColor', 'PixelSearch', 'PostMessage', 'Process', 'Progress', 'Random', 'RegExMatch', 'RegExReplace', 'RegDelete', 'RegRead', 'RegWrite', 'RegisterCallback', 'Reload', 'Return', 'Round', 'RunWait', 'RunAs', 'Run', 'SB_SetText', 'SB_SetParts', 'SB_SetIcon', 'SendEvent', 'SendPlay', 'SendInput', 'SendRaw', 'SendLevel', 'SendMessage', 'SendMode', 'Send', 'SetBatchLines', 'SetCapsLockState', 'SetControlDelay', 'SetDefaultMouseSpeed', 'SetEnv', 'SetFormat', 'SetKeyDelay', 'SetMouseDelay', 'SetNumLockState', 'SetScrollLockState', 'SetRegView', 'SetStoreCapsLockMode', 'SetTimer', 'SetTitleMatchMode', 'SetWinDelay', 'SetWorkingDir', 'Shutdown', 'Sin', 'Sleep', 'Sort', 'SoundBeep', 'SoundGetWaveVolume', 'SoundGet', 'SoundPlay', 'SoundSetWaveVolume', 'SoundSet', 'SplashImage', 'SplashTextOn', 'SplashTextOff', 'SplitPath', 'Sqrt', 'StatusBarGetText', 'StatusBarWait', 'StringGetPos', 'StrGet', 'StringCaseSense', 'StringLeft', 'StringLen', 'StringLower', 'StringMid', 'StringReplace', 'StringRight', 'StringSplit', 'StringTrimLeft', 'StringTrimRight', 'StringUpper', 'StrLen', 'StrPut', 'StrReplace', 'StrSplit', 'SubStr', 'Suspend', 'Switch', 'SysGet', 'Tan', 'Thread', 'Throw', 'ToolTip', 'Transform', 'TrayTip', 'Trim', 'Try', 'TV_Add', 'TV_Delete', 'TV_Get', 'TV_GetChild', 'TV_GetCount', 'TV_GetNext', 'TV_GetParent', 'TV_GetPrev', 'TV_GetSelection', 'TV_GetText', 'TV_Modify', 'TV_SetImageList', 'Until', 'UrlDownloadToFile', 'VarSetCapacity', 'While-loop', 'WinActivateBottom', 'WinActivate', 'WinClose', 'WinExist', 'WinGetActiveStats', 'WinGetActiveTitle', 'WinGetClass', 'WinGetText', 'WinGetPos', 'WinGetTitle', 'WinGet', 'WinHide', 'WinKill', 'WinMaximize', 'WinMenuSelectItem', 'WinMinimizeAllUndo', 'WinMinimizeAll', 'WinMinimize', 'WinMove', 'WinRestore', 'WinSet', 'WinSetTitle', 'WinShow', 'WinWaitActive', 'WinWaitNotActive', 'WinWaitClose', 'WinWait', 'ClipboardTimeout', 'ClipboardTimeout', 'CommentFlag', 'Delimiter', 'DerefChar', 'ErrorStdOut', 'EscapeChar', 'HotkeyInterval', 'HotkeyModifierTimeout', 'Hotstring', 'If', 'IfTimeout', 'IfWinActive', 'IfWinNotActive', 'IfWinExist', 'IfWinNotExist', 'Include', 'IncludeAgain', 'InputLevel', 'InstallKeybdHook', 'InstallMouseHook', 'KeyHistory', 'LTrim', 'MaxHotkeysPerInterval', 'MaxMem', 'MaxThreads', 'MaxThreadsBuffer', 'MaxThreadsPerHotkey', 'MenuMaskKey', 'NoEnv', 'NoTrayIcon', 'Persistent', 'Requires', 'SingleInstance', 'UseHook', 'Warn', 'WinActivateForce', 'the', 'of', 'and', 'to', 'in', 'is', 'you', 'that', 'it', 'he', 'was', 'for', 'on', 'are', 'as', 'with', 'his', 'they', 'at', 'be', 'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'use', 'an', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'two', 'more', 'write', 'go', 'see', 'number', 'no', 'way', 'could', 'people', 'my', 'than', 'first', 'water', 'been', 'call', 'who', 'oil', 'its', 'now', 'find', 'long', 'down', 'day', 'did', 'get', 'come', 'made', 'may', 'part', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '$', '%', '^', '&', '-', '_', '=', ',', '<', '.', '>', '?', ';', ':', "|"];
+		var characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"];
 		let txt = ".replace(/" + `${characters[e]}` + "/g, \"" + `¢${rand}¢` + "\")"
 		let fp3 = "./encode.js"
 		fs.appendFile(fp3, txt, function(error) {
 			if (error) return log.error(error);
 		})
-		let txt2 = ".replace(/" + `¢${rand}¢` + "'/g, \"" + `${characters[e]}` + "\")"
+		let txt2 = ".replace(/" + `¢${rand}¢` + "/g, \"" + `${characters[e]}` + "\")"
 		let fp4 = "./decode.js"
 		fs.appendFile(fp4, txt2, function(error) {
 			if (error) return log.error(error);
 		})
+	}
+			function repp2() {
+			let txt3 = `;\nfs.appendFile(path, txt1, function(error) {\n		if (error) return log.error(error);\n	})\n`
+			let txt4 = `;\nfs.appendFile(path, txt1, function(error) {\n		if (error) return log.error(error);\n	})\n`
+			fs.appendFile('./decode.js', txt4, function(error) {
+			if (error) return log.error(error);
+		})
+			fs.appendFile('./encode.js', txt3, function(error) {
+			if (error) return log.error(error);
+		})
+		}
+	}
+}
+
+if (argv.language == 'ahk' && argv.script !== 'undefined') {
+	console.log(argv.security + 2);
+	let fp5 = "./encode.txt"
+	let fp6 = "./decode.txt"
+	let txt1 = `const fs = require('fs');\nlet path = \"${fp5}\";\n` + "let txt1 = fs.readFileSync('" + argv.script + "', 'utf-8')"
+	let txt2 = `const fs = require('fs');\nlet path = \"${fp6}\";\n` + "let txt1 = fs.readFileSync('encoded.txt', 'utf-8')"
+	let fp3 = "./encode.js"
+	fs.appendFile(fp3, txt1, function(error) {
+		if (error) return log.error(error);
+	})
+	let fp4 = "./decode.js"
+	fs.appendFile(fp4, txt2, function(error) {
+		if (error) return log.error(error);
+	})
+	var f = '1'
+	for (let e = 0; e < 527; e++) {
+		if (e == 526) {
+			setTimeout(repp2, 1000);
+		}
+		if (e == 66 || 132 || 198 || 264 || 330 || 396 || 462) {
+			setTimeout(repp3, 100)
+		}
+		setTimeout(repp1, 100);
+		function repp1() {
+		var rand = randomString(argv.s + 2, '¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪');
+		var characters = ['Abs', 'AutoTrim', 'Asc', 'ASin', 'ACos', 'ATan', 'BlockInput', 'Break', 'Catch', 'Ceil', 'Chr', 'Click', 'ClipWait', 'ComObjActive', 'ComObjArray', 'ComObjConnect', 'ComObjCreate', 'ComObject', 'ComObjEnwrap', 'ComObjUnwrap', 'ComObjError', 'ComObjFlags', 'ComObjGet', 'ComObjMissing', 'ComObjParameter', 'ComObjQuery', 'ComObjType', 'ComObjValue', 'Continue', 'ControlClick', 'ControlFocus', 'ControlGetFocus', 'ControlGetPos', 'ControlGetText', 'ControlGet', 'ControlMove', 'ControlSendRaw', 'ControlSend', 'ControlSetText', 'CoordMode', 'Control', 'Cos', 'Critical', 'DetectHiddenText', 'DetectHiddenWindows', 'DllCall', 'DriveGet', 'DriveSpaceFree', 'Edit', 'Else', 'EnvAdd', 'EnvDiv', 'EnvGet', 'EnvMult', 'EnvSet', 'EnvSub', 'EnvUpdate', 'Exception', 'ExitApp', 'Exit', 'Exp', 'FileAppend', 'FileCopyDir', 'FileCopy', 'FileCreateDir', 'FileCreateShortcut', 'FileDelete', 'FileEncoding', 'FileExist', 'FileInstall', 'FileGetAttrib', 'FileGetShortcut', 'FileGetSize', 'FileGetTime', 'FileGetVersion', 'FileMoveDir', 'FileMove', 'FileOpen', 'FileReadLine', 'FileRead', 'FileRecycleEmpty', 'FileRecycle', 'FileRemoveDir', 'FileSelectFile', 'FileSelectFolder', 'FileSetAttrib', 'FileSetTime', 'Finally', 'Floor', 'For', 'FormatTime', 'Format', 'Func', 'GetKeyName', 'GetKeyVK', 'GetKeySC', 'GetKeyState', 'Gosub', 'Goto', 'GroupActivate', 'GroupAdd', 'GroupClose', 'GroupDeactivate', 'GuiControlGet', 'GuiControl', 'Gui', 'Hotkey', 'Hotstring', 'IfWinExist', 'IfWinNotExist', 'IfWinNotActive', 'IfWinActive', 'IfMsgBox', 'IfLessOrEqual', 'IfLess', 'IfNotInString', 'IfInString', 'IfGreaterOrEqual', 'IfGreater', 'IfNotExist', 'IfExist', 'IfNotEqual', 'IfEqual', 'if', 'in', 'not', 'contains', 'IL_Create', 'IL_Add', 'IL_Destroy', 'ImageSearch', 'IniDelete', 'IniRead', 'IniWrite', 'InputHook', 'InputBox', 'Input', 'InStr', 'IsByRef', 'IsFunc', 'IsLabel', 'IsObject', 'KeyHistory', 'KeyWait', 'ListHotkeys', 'ListLines', 'ListVars', 'LoadPicture', 'Log', 'Ln', 'Loop', 'LV_Add', 'LV_Delete', 'LV_DeleteCol', 'LV_GetCount', 'LV_GetNext', 'LV_GetText', 'LV_Insert', 'LV_InsertCol', 'LV_Modify', 'LV_ModifyCol', 'LV_SetImageList', 'MenuGetName', 'MenuGetHandle', 'Menu', 'Mod', 'MouseClickDrag', 'MouseClick', 'MouseGetPos', 'MouseMove', 'MsgBox', 'NumGet', 'NumPut', 'ObjAddRef', 'ObjRelease', 'ObjBindMethod', 'ObjClone', 'ObjCount', 'ObjDelete', 'ObjGetAddress', 'ObjGetCapacity', 'ObjHasKey', 'ObjInsertAt', 'ObjInsert', 'ObjLength', 'ObjMaxIndex', 'ObjMinIndex', 'Min', 'Max', 'ObjNewEnum', 'ObjPop', 'ObjPush', 'ObjRemoveAt', 'ObjRemove', 'ObjSetCapacity', 'ObjGetBase', 'ObjGetBase', 'ObjRawSet', 'ObjSetBase', 'OnClipboardChange', 'OnError', 'OnExit', 'OnExit', 'OnMessage', 'Ord', 'OutputDebug', 'Pause', 'PixelGetColor', 'PixelSearch', 'PostMessage', 'Process', 'Progress', 'Random', 'RegExMatch', 'RegExReplace', 'RegDelete', 'RegRead', 'RegWrite', 'RegisterCallback', 'Reload', 'Return', 'Round', 'RunWait', 'RunAs', 'Run', 'SB_SetText', 'SB_SetParts', 'SB_SetIcon', 'SendEvent', 'SendPlay', 'SendInput', 'SendRaw', 'SendLevel', 'SendMessage', 'SendMode', 'Send', 'SetBatchLines', 'SetCapsLockState', 'SetControlDelay', 'SetDefaultMouseSpeed', 'SetEnv', 'SetFormat', 'SetKeyDelay', 'SetMouseDelay', 'SetNumLockState', 'SetScrollLockState', 'SetRegView', 'SetStoreCapsLockMode', 'SetTimer', 'SetTitleMatchMode', 'SetWinDelay', 'SetWorkingDir', 'Shutdown', 'Sin', 'Sleep', 'Sort', 'SoundBeep', 'SoundGetWaveVolume', 'SoundGet', 'SoundPlay', 'SoundSetWaveVolume', 'SoundSet', 'SplashImage', 'SplashTextOn', 'SplashTextOff', 'SplitPath', 'Sqrt', 'StatusBarGetText', 'StatusBarWait', 'StringGetPos', 'StrGet', 'StringCaseSense', 'StringLeft', 'StringLen', 'StringLower', 'StringMid', 'StringReplace', 'StringRight', 'StringSplit', 'StringTrimLeft', 'StringTrimRight', 'StringUpper', 'StrLen', 'StrPut', 'StrReplace', 'StrSplit', 'SubStr', 'Suspend', 'Switch', 'SysGet', 'Tan', 'Thread', 'Throw', 'ToolTip', 'Transform', 'TrayTip', 'Trim', 'Try', 'TV_Add', 'TV_Delete', 'TV_Get', 'TV_GetChild', 'TV_GetCount', 'TV_GetNext', 'TV_GetParent', 'TV_GetPrev', 'TV_GetSelection', 'TV_GetText', 'TV_Modify', 'TV_SetImageList', 'Until', 'UrlDownloadToFile', 'VarSetCapacity', 'While-loop', 'WinActivateBottom', 'WinActivate', 'WinClose', 'WinExist', 'WinGetActiveStats', 'WinGetActiveTitle', 'WinGetClass', 'WinGetText', 'WinGetPos', 'WinGetTitle', 'WinGet', 'WinHide', 'WinKill', 'WinMaximize', 'WinMenuSelectItem', 'WinMinimizeAllUndo', 'WinMinimizeAll', 'WinMinimize', 'WinMove', 'WinRestore', 'WinSet', 'WinSetTitle', 'WinShow', 'WinWaitActive', 'WinWaitNotActive', 'WinWaitClose', 'WinWait', 'ClipboardTimeout', 'ClipboardTimeout', 'CommentFlag', 'Delimiter', 'DerefChar', 'ErrorStdOut', 'EscapeChar', 'HotkeyInterval', 'HotkeyModifierTimeout', 'Hotstring', 'If', 'IfTimeout', 'IfWinActive', 'IfWinNotActive', 'IfWinExist', 'IfWinNotExist', 'Include', 'IncludeAgain', 'InputLevel', 'InstallKeybdHook', 'InstallMouseHook', 'KeyHistory', 'LTrim', 'MaxHotkeysPerInterval', 'MaxMem', 'MaxThreads', 'MaxThreadsBuffer', 'MaxThreadsPerHotkey', 'MenuMaskKey', 'NoEnv', 'NoTrayIcon', 'Persistent', 'Requires', 'SingleInstance', 'UseHook', 'Warn', 'WinActivateForce', 'the', 'of', 'and', 'to', 'in', 'is', 'you', 'that', 'it', 'he', 'was', 'for', 'on', 'are', 'as', 'with', 'his', 'they', 'at', 'be', 'this', 'have', 'from', 'or', 'one', 'had', 'by', 'word', 'but', 'not', 'what', 'all', 'were', 'we', 'when', 'your', 'can', 'said', 'there', 'use', 'an', 'each', 'which', 'she', 'do', 'how', 'their', 'if', 'will', 'up', 'other', 'about', 'out', 'many', 'then', 'them', 'these', 'so', 'some', 'her', 'would', 'make', 'like', 'him', 'into', 'time', 'has', 'look', 'two', 'more', 'write', 'go', 'see', 'number', 'no', 'way', 'could', 'people', 'my', 'than', 'first', 'water', 'been', 'call', 'who', 'oil', 'its', 'now', 'find', 'long', 'down', 'day', 'did', 'get', 'come', 'made', 'may', 'part', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':'];
+		let txt = ".replace(/" + `${characters[e]}` + "/g, \"" + `¢${rand}¢` + "\")"
+		let fp3 = "./encode.js"
+		fs.appendFile(fp3, txt, function(error) {
+			if (error) return log.error(error);
+		})
+		let txt2 = ".replace(/" + `¢${rand}¢` + "/g, \"" + `${characters[e]}` + "\")"
+		let fp4 = "./decode.js"
+		fs.appendFile(fp4, txt2, function(error) {
+			if (error) return log.error(error);
+		})
+	}
+			function repp2() {
+			let txt3 = `;\nfs.appendFile(path, txt1, function(error) {\n		if (error) return log.error(error);\n	})\n`
+			let txt4 = `;\nfs.appendFile(path, txt1, function(error) {\n		if (error) return log.error(error);\n	})\n`
+			fs.appendFile('./decode.js', txt4, function(error) {
+			if (error) return log.error(error);
+		})
+			fs.appendFile('./encode.js', txt3, function(error) {
+			if (error) return log.error(error);
+		})
 		}
 		function repp3() {
-			let fp1 = ";\nlet txt2 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt2 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-		function repp4() {
-			let fp1 = ";\nlet txt3 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt3 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-		function repp5() {
-			let fp1 = ";\nlet txt4 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt4 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-		function repp6() {
-			let fp1 = ";\nlet txt5 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt5 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-		function repp7() {
-			let fp1 = ";\nlet txt6 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt6 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-		function repp8() {
-			let fp1 = ";\nlet txt7 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt7 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-		function repp9() {
-			let fp1 = ";\nlet txt8 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-			let fp2 = ";\nlet txt8 = fs.readFileSync('encoded.txt', 'utf-8')"
-			fs.appendFile('./decode.js', fp2, function(error) {
-			if (error) return log.error(error);
-		})
-			fs.appendFile('./encode.js', fp1, function(error) {
-			if (error) return log.error(error);
-		})
-		}
-			function repp2() {
-			let fp3 = "./encoded.txt"
-			let fp4 = "./decoded.txt"
-			let txt3 = `\nlet path = \"${fp3}\";\nfs.appendFile(path, txt1+txt2+txt3+txt4+txt5+txt6+txt7+txt8, function(error) {\n		if (error) return log.error(error);\n	})\n`
-			let txt4 = `\nlet path = \"${fp4}\";\nfs.appendFile(path, txt1+txt2+txt3+txt4+txt5+txt6+txt7+txt8, function(error) {\n		if (error) return log.error(error);\n	})\n`
+			f++
+			let txt3 = `;\nfs.appendFile(path, txt${f}, function(error) {\n		if (error) return log.error(error);\n	})\n`
+			let txt4 = `;\nfs.appendFile(path, txt${f}, function(error) {\n		if (error) return log.error(error);\n	})\n`
 			fs.appendFile('./decode.js', txt4, function(error) {
 			if (error) return log.error(error);
 		})
