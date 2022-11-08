@@ -23,9 +23,9 @@ const argv = yargs
 		type: 'number'
 	})
 	.option('language', {
-		description: 'ahk',
+		description: 'default',
 		alias: ['l', 'lang'],
-		choices: ['ahk', 'default']
+		choices: ['default']
 	})
 	.option('script', {
 		description: 'example for python, \"-S main.py\"',
