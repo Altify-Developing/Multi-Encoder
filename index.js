@@ -34,9 +34,9 @@ const argv = yargs
 		type: 'string'
 	})
 	.option('type', {
-		description: 'sets the language of the encoder/decoder, choices are default and ahk',
+		description: 'sets the language of the encoder/decoder, choices are default, ahk, and python',
 		alias: ['t'],
-		choices: ['default', 'ahk']
+		choices: ['default', 'ahk', 'python']
 	})
 	.help()
 	.alias('help', 'h').argv;
@@ -115,6 +115,51 @@ if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'd
 			if (error) return log.error(error);
 		})
 		let fp66 = "./decode.js"
+		fs.appendFile(fp66, txt2, function(error) {
+			if (error) return log.error(error);
+		})
+	}
+}
+
+if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'python') {
+	console.log(argv.security + 2);
+	let txt1 = `from pathlib import Path\ntxt = Path('`+argv.script+"').read_text()"+`\n`
+	let txt2 = `from pathlib import Path\ntxt = Path('encoded.txt').read_text()\n`
+	let fp3 = "./encode.py"
+	fs.appendFile(fp3, txt1, function(error) {
+		if (error) return log.error(error);
+	})
+	let fp4 = "./decode.py"
+	fs.appendFile(fp4, txt2, function(error) {
+		if (error) return log.error(error);
+	})
+	setTimeout(generation, 500);
+	function generation() {
+		for (let e = 0; e < 52; e++) {
+			var rand = randomString(argv.s + 2, '¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƀƁƂƃƄƅƆƇƈƉƊƋƌƍƎƏƐƑƒƓƔƕƖƗƘƙƚƛƜƝƞƟƠơƢƣƤƥƦƧƨƩƪƫƬƭƮƯưƱƲƳƴƵƶƷƸƹƺƻƼƽƾƿǀǁǂǃǄǅǆǇǈǉǊǋǌǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǝǞǟǠǡǢǣǤǥǦǧǨǩǪǫǬǭǮǯǰǱǲǳǴǵǶǷǸǹǺǻǼǽǾǿȀȁȂȃȄȅȆȇȈȉȊȋȌȍȎȏȐȑȒȓȔȕȖȗȘșȚțȜȝȞȟȠȡȢȣȤȥȦȧȨȩȪȫȬȭȮȯȰȱȲȳȴȵȶȷȸȹȺȻȼȽȾȿɀɁɂɃɄɅɆɇɈɉɊɋɌɍɎɏɐɑɒɓɔɕɖɗɘəɚɛɜɝɞɟɠɡɢɣɤɥɦɧɨɩɪɫɬɭɮɯɰɱɲɳɴɵɶɷɸɹɺɻɼɽɾɿʀʁʂʃʄʅʆʇʈʉʊʋʌʍʎʏʐʑʒʓʔʕʖʗʘʙʚʛʜʝʞʟʠʡʢʣʤʥʦʧʨʩʪʫʬʭʮʯʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˁ˂˃˄˅ˆˇˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˘˙˚˛˜˝˞˟ˠˡˢˣˤ˥˦˧˨˩˪˫ˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿̴̵̶̷̸̡̢̧̨̛̖̗̘̙̜̝̞̟̠̣̤̥̦̩̪̫̬̭̮̯̰̱̲̳̹̺̻̼͇͈͉͍͎̀́̂̃̄̅̆̇̈̉̊̋̌̍̎̏̐̑̒̓̔̽̾̿̀́͂̓̈́͆͊͋͌̕̚ͅ͏͓͔͕͖͙͚͐͑͒͗͛ͣͤͥͦͧͨͩͪͫͬͭͮͯ͘͜͟͢͝͞͠͡ͰͱͲͳʹ͵ͶͷͺͻͼͽͿ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈ');
+			// ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ
+			var characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"];
+			let txt = "txt = txt.replace('" + `${characters[e]}` + "', '"+ `¢${rand}¢` + "')"+`\n`
+			let fp3 = "./encode.py"
+			fs.appendFile(fp3, txt, function(error) {
+				if (error) return log.error(error);
+			})
+			let txt2 = "txt = txt.replace('"+ `¢${rand}¢` + "', '" + `${characters[e]}` + "')"+`\n`
+			let fp4 = "./decode.py"
+			fs.appendFile(fp4, txt2, function(error) {
+				if (error) return log.error(error);
+			})
+		}
+	}
+	setTimeout(finish, 1000);
+	function finish() {
+		let txt1 = `print(txt)`
+		let txt2 = `print(txt)`
+		let fp77 = "./encode.py"
+		fs.appendFile(fp77, txt1, function(error) {
+			if (error) return log.error(error);
+		})
+		let fp66 = "./decode.py"
 		fs.appendFile(fp66, txt2, function(error) {
 			if (error) return log.error(error);
 		})
