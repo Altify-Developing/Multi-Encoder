@@ -1,344 +1,303 @@
-FileCreateDir,Results
-FileCreateDir,Results\Capture
-FileCreateDir,Results\CaptureOL
-for objItem in ComObjGet("winmgmts:").ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration WHERE IPEnabled = True")
-    MsgBox, % "IPAddress:`t`t" objItem.IPAddress[0] "`nMACAddress:`t" objItem.MACAddress "`n"
-GenerateRandomString(length = 1)
-	{
-		characters :="abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890-=_+!@#$"
-		StringSplit, chars, characters
-		
-		Random,len2,3,6
-		Loop, %length%
-		{
-			Loop, %len2%
-			{
-				Random, rand, 1, 315
-				password .= chars%rand%	
-			}
-		}
-		return password
-	}
-Random,XGPhas,1,100
-if XGPhas between 1 and 40
+;@Ahk2Exe-Set CompanyName, Altify LLC\n;@Ahk2Exe-Set Copyright, Altify 2022\n;@Ahk2Exe-Set Description, Altify Encoder
+;@Ahk2Exe-Set FileVersion, 0.1.3
+;@Ahk2Exe-Set InternalName, encode.exe
+;@Ahk2Exe-Set LegalTrademarks, Altify LLC © 2022
+;@Ahk2Exe-Set Name, Altify Encoder
+;@Ahk2Exe-Set OrigFilename, encode.exe
+;@Ahk2Exe-Set ProductName, Altify Encoder
+;@Ahk2Exe-Set ProductVersion, 0.1.3
+;@Ahk2Exe-Set Version, 0.1.3
+#SingleInstance, Force
+StringCaseSense, On
+SetBatchLines, -1
+Process, Priority,, Realtime
+Critical On
+IfExist,settings/def.ini
 {
-; None
-FileAppend,`nXbox Game Pass Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
+	IniRead,ttype,settings/def.ini,Section1,Option1
+	IniRead,ttype2,settings/def.ini,Section2,Option1
 }
-if XGPhas between 41 and 100
+IfNotExist,settings/def.ini
 {
-	; CaptureOL
-	FileAppend,%A_Space%|%A_Space%Xbox Game Pass Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, XGPgamecount,1,25
-	Loop, %XGPgamecount%
-	{
-		Random,XGPgamenumber,1,291
-		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
-		FileAppend,%XGPgametitle%`, %A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-	; Capture
-	FileAppend,`nXbox Game Pass Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`nGames:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, XGPgamecount,1,25
-	Loop, %XGPgamecount%
-	{
-		Random,XGPgamenumber,1,291
-		FileReadLine,XGPgametitle,XGP.games.list,%XGPgamenumber%
-		FileAppend,%XGPgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
+	ttype := "1"
+	ttype2 := "input.txt"
 }
-Random,battlenethas,1,100
-if battlenethas between 1 and 40
-{
-; None
-FileAppend,`nBattle.NET Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%Battle.NET Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-}
-if battlenethas between 41 and 100
-{
-	; CaptureOL
-	FileAppend,%A_Space%|%A_Space%Battle.NET Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, battlenetgamecount,1,8
-	Loop, %battlenetgamecount%
-	{
-		Random,battlenetgamenumber,1,28
-		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
-		FileAppend,%battlenetgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-	; Capture
-	FileAppend,`nBattle.NET Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, battlenetgamecount,1,8
-	Loop, %battlenetgamecount%
-	{
-		Random,battlenetgamenumber,1,28
-		FileReadLine,battlenetgametitle,battlenet.games.list,%battlenetgamenumber%
-		FileAppend,%battlenetgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-}
-Random,epichas,1,100
-if epichas between 1 and 40
-{
-; None
-FileAppend,`nEpic Games Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%Epic Games Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-}
-if epichas between 41 and 100
-{
-	; CaptureOL
-	FileAppend,%A_Space%|%A_Space%Epic Games Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, epicgamecount,1,5
-	Loop, %epicgamecount%
-	{
-		Random,epicgamenumber,1,21
-		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
-		FileAppend,%epicgametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-	; Capture
-	FileAppend,`nEpic Games Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, epicgamecount,1,5
-	Loop, %epicgamecount%
-	{
-		Random,epicgamenumber,1,21
-		FileReadLine,epicgametitle,epic.games.list,%epicgamenumber%
-		FileAppend,%epicgametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-}
-Random,steamhas,1,100
-if steamhas between 1 and 40
-{
-; None
-FileAppend,`nSteam Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%Steam Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-}
-if steamhas between 41 and 100
-{
-	; CaptureOL
-	FileAppend,%A_Space%|%A_Space%Steam Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, gamecount,1,50
-	Loop, %gamecount%
-	{
-		Random,gamenumber,1,177
-		FileReadLine,gametitle,steam.games.list,%gamenumber%
-		FileAppend,%gametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-	; Capture
-	FileAppend,`nSteam Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, gamecount,1,50
-	Loop, %gamecount%
-	{
-		Random,gamenumber,1,177
-		FileReadLine,gametitle,steam.games.list,%gamenumber%
-		FileAppend,%gametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-}
-Random,uplayhas,1,100
-if uplayhas between 1 and 40
-{
-; None
-FileAppend,`nUPlay Grabber: N/A,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%UPlay Grabber: N/A,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-}
-if uplayhas between 41 and 100
-{
-	; CaptureOL
-	FileAppend,%A_Space%|%A_Space%UPlay Grabber:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%A_Space%| Games:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, uplaygamecount,1,5
-	Loop, %uplaygamecount%
-	{
-		Random,uplaygamenumber,1,21
-		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
-		FileAppend,%uplaygametitle%`,%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-	; Capture
-	FileAppend,`nUPlay Grabber:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,%FirstName%%Mail%:%LastName%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,% GenerateRandomString(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	FileAppend,`n Games:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	Random, uplaygamecount,1,5
-	Loop, %uplaygamecount%
-	{
-		Random,uplaygamenumber,1,21
-		FileReadLine,uplaygametitle,uplay.games.list,%uplaygamenumber%
-		FileAppend,%uplaygametitle%`,%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-	}
-}
-Random,creditposs,1,10
-if creditposs = 1
-{
-Random,creditscore,300,400
-}
-if creditposs = 2
-{
-Random,creditscore,350,450
-}
-if creditposs = 3
-{
-Random,creditscore,450,500
-}
-if creditposs = 4
-{
-Random,creditscore,500,550
-}
-if creditposs = 5
-{
-Random,creditscore,550,650
-}
-if creditposs = 6
-{
-Random,creditscore,650,700
-}
-if creditposs = 7
-{
-Random,creditscore,700,750
-}
-if creditposs = 8
-{
-Random,creditscore,750,800
-}
-if creditposs = 9
-{
-Random,creditscore,800,825
-}
-if creditposs = 10
-{
-Random,creditscore,825,850
-}
-FileAppend,`nCredit Score: %creditscore%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%Credit Score: %creditscore%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-Random,dob1,1,12
-Random,dob2,1,28
-Random,dob3,1960,2004
-Random,eff1,1,12
-Random,eff2,1,28
-Random,eff3,2019,2023
-	vvf1(length = 1)
-	{
-		characters :="1234567890"
-		StringSplit, chars, characters
-		
-		Loop, %length%
-		{
-			Loop, 5
-			{
-				Random, rand, 1, 26
-				password .= chars%rand%	
-			}
-		}
-		return password
-	}
-	vvf2(length = 1)
-	{
-		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-		StringSplit, chars, characters
-		
-		Loop, %length%
-		{
-    Loop, 4
-			{
-				Random, rand, 1, 26
-				password .= chars%rand%	
-			}
-		}
-		return password
-	}
-	vvf3(length = 1)
-	{
-		characters :="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-		StringSplit, chars, characters
-		
-		Loop, %length%
-		{
-			Loop, 1
-			{
-				Random, rand, 1, 26
-				password .= chars%rand%	
-			}
-		}
-		return password
-	}
-Random,sv3o,1000000,9999999
-Random,sv3t,10,99
-	vvf4(length = 1)
-	{
-		characters :="1234567890"
-		StringSplit, chars, characters
-		
-		Loop, %length%
-		{
-			Loop, 6
-			{
-				Random, rand, 1, 26
-				password .= chars%rand%	
-			}
-		}
-		return password
-	}
-Random,sv4o,1,9
-Random,sv4t,1,9
-FileAppend,Given Name: %FirstName%`nSurname: %LastName%`nNationality: USA`nSex:%Gender%`nDate of Birth: %dob1%/%dob2%/%dob3%`nPlace of Birth: %State%`nIssued On: %eff1%/%eff2%/%eff3%`nExpires on %eff1%/%eff2%/2024`nVVFs:%A_Space%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf1(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,-,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf2(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,-%sv3o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf3(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%sv3t%-%sv4o%,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf4(),Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%sv4t%`n,Results/Capture/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%A_Space%|%A_Space%Given Name: %FirstName%%A_Space%|%A_Space%Surname: %LastName%%A_Space%|%A_Space%Nationality: USA%A_Space%|%A_Space%Sex:%Gender%%A_Space%|%A_Space%Date of Birth: %dob1%/%dob2%/%dob3%%A_Space%|%A_Space%Place of Birth: %State%%A_Space%|%A_Space%Issued On: %eff1%/%eff2%/%eff3%%A_Space%|%A_Space%Expires on %eff1%/%eff2%/2024%A_Space%|%A_Space%VVFs:%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf1(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,-,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf2(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,-%sv3o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf3(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%sv3t%-%sv4o%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,% vvf4(),Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-FileAppend,%sv4t%%A_Space%|%A_Space%,Results/CaptureOL/Account Targeted Account Generator By Altify#4476 - Thanks For Boosting.txt,
-MsgBox,48,Done!
+Gui, Add, Button, Default, Help
+Gui, Add, Button, Default, Discord
+Gui, Add, Button, Default, Github
+Gui, Add, Button, Default, Website
+Gui, Add, Button, Default, SaveOptions
+Gui, Add, Text,ym, Encode `(1`) or Decode `(2`):
+Gui, Add, Text,ym, filename:
+Gui, Add, Edit, vtype ym ym, %ttype%
+Gui, Add, Edit, vtype2 ym ym, %ttype2%
+Gui, Add, Button, default, Submit
+Gui, Add, Picture, x0 y0 w610 h385 +0x4000000, config.png
+Gui, Show,, Encoder By Altify#0016
+return
+ButtonHelp:
+Run,Helper.exe
 ExitApp
+ButtonDiscord:
+Run,https://discord.gg/alts
+ExitApp
+ButtonGithub:
+Run,https://github.com/Altify-Developing/Altify-Developing-Main
+ExitApp
+ButtonWebsite:
+Run,https://www.altifydeveloping.com/
+ExitApp
+ButtonSaveOptions:
+Gui, Submit
+FileDelete,settings/def.ini
+FileRemoveDir,settings
+FileCreateDir,settings
+IniWrite,%type%,settings/def.ini,Section1,Option1
+Run,encoder.exe
+ExitApp
+ButtonSubmit:
+Gui, Submit
+if type = 1
+{
+	TrayTip, Starting`,Welcome To Altify`'s Encoder, Created By Altify#0016`nDiscord: https://discord.altifydeveloping.com/,,17
+	Sleep, 2000
+	TrayTip
+	FileCreateDir,output
+	FileCreateDir,temp
+	FileAppend,`n`r,%type2%
+	Loop, Read, %type2%
+	{
+		total_lines = %A_Index%
+		scrinst = %A_Index%
+	}
+	Loop, %total_lines%
+	{
+		scrinst -= 1
+		FileReadLine,towrite,%type2%,%scrinst%
+		FileAppend,%towrite%`n,temp/script.txt
+	}
+	FileRead,alsotowrite,temp/script.txt
+	FileRead,string1,%type2%
+	string2 := StrReplace(string1, "a", "¢¡¢")
+	string3 := StrReplace(string2, "b", "¢¡¡¢")
+	string4 := StrReplace(string3, "c", "¢¡²¢")
+	string := StrReplace(stringer, "d", "¢²¡¢")
+	stringer := StrReplace(string, "e", "¢²¢")
+	string := StrReplace(stringer, "f", "¢•¢")
+	stringer := StrReplace(string, "g", "¢»•¢")
+	string := StrReplace(stringer, "h", "¢•£¢")
+	stringer := StrReplace(string, "i", "¢²£¢")
+	string := StrReplace(stringer, "j", "¢•²¢")
+	stringer := StrReplace(string, "k", "¢£¢")
+	string := StrReplace(stringer, "l", "¢°£¢")
+	stringer := StrReplace(string, "m", "¢£°¢")
+	string := StrReplace(stringer, "n", "¢£²¢")
+	stringer := StrReplace(string, "o", "¢²°¢")
+	string := StrReplace(stringer, "p", "¢°²¢")
+	stringer := StrReplace(string, "q", "¢°¢")
+	string := StrReplace(stringer, "r", "¢°º¢")
+	stringer := StrReplace(string, "s", "¢º°¢")
+	string := StrReplace(stringer, "t", "¢º²¢")
+	stringer := StrReplace(string, "u", "¢²º¢")
+	string := StrReplace(stringer, "v", "¢º»¢")
+	stringer := StrReplace(string, "w", "¢¼»¢")
+	string := StrReplace(stringer, "x", "¢»¼¢")
+	stringer := StrReplace(string, "y", "¢ºº¢")
+	string := StrReplace(stringer, "z", "¢º©¢")
+	stringer := StrReplace(string, "A", "¢¡³¢")
+	string := StrReplace(stringer, "B", "¢³¡¢")
+	stringer := StrReplace(string, "C", "¢¡•¢")
+	string := StrReplace(stringer, "D", "¢•¡¢")
+	stringer := StrReplace(string, "E", "¢¡€¢")
+	string := StrReplace(stringer, "F", "¢×£¢")
+	stringer := StrReplace(string, "G", "¢£•¢")
+	string := StrReplace(stringer, "H", "¢•€¢")
+	stringer := StrReplace(string, "I", "¢€•¢")
+	string := StrReplace(stringer, "J", "¢¤¢")
+	stringer := StrReplace(string, "K", "¢£×¢")
+	string := StrReplace(stringer, "L", "¢»£¢")
+	stringer := StrReplace(string, "M", "¢£°¤¢")
+	string := StrReplace(stringer, "N", "¢£¤¢")
+	stringer := StrReplace(string, "O", "¢¤£¢")
+	string := StrReplace(stringer, "P", "¢°×¢")
+	stringer := StrReplace(string, "Q", "¢°¤¢")
+	string := StrReplace(stringer, "R", "¢¤°¢")
+	stringer := StrReplace(string, "S", "¢º¤¢")
+	string := StrReplace(stringer, "T", "¢¤º¢")
+	stringer := StrReplace(string, "U", "¢×º¢")
+	string := StrReplace(stringer, "V", "¢º¢")
+	stringer := StrReplace(string, "W", "¢¼º¢")
+	string := StrReplace(stringer, "X", "¢º¼¢")
+	stringer := StrReplace(string, "Y", "¢»º¢")
+	string := StrReplace(stringer, "Z", "¢º¾¥¢")
+	stringer := StrReplace(string, "1", "¢¼¢")
+	string := StrReplace(stringer, "2", "¢‹¢")
+	stringer := StrReplace(string, "3", "¢‹¼¢")
+	string := StrReplace(stringer, "4", "¢¼¥¢")
+	stringer := StrReplace(string, "5", "¢‹¥¢")
+	string := StrReplace(stringer, "6", "¢½¢")
+	stringer := StrReplace(string, "7", "¢½‹¢")
+	string := StrReplace(stringer, "8", "¢‹½¢")
+	stringer := StrReplace(string, "9", "¢½¥¢")
+	string := StrReplace(stringer, "0", "¢¥½¢")
+	stringer := StrReplace(string, "``", "¢¾¢")
+	string := StrReplace(stringer, "~", "¢‹¾¢")
+	stringer := StrReplace(string, "!", "¢¾‹¢")
+	string := StrReplace(stringer, "@", "¢¾¥¢")
+	stringer := StrReplace(string, "#", "¢¥¾¢")
+	string := StrReplace(stringer, "$", "¢‹¾¢")
+	stringer := StrReplace(string, "`%", "¢¼¾¢")
+	string := StrReplace(stringer, "`^", "¢¾¼¢")
+	stringer := StrReplace(string, "*", "¢ª¢")
+	string := StrReplace(stringer, "`(", "¢¼©¢")
+	stringer := StrReplace(string, "`)", "¢¿¢")
+	string := StrReplace(stringer, "-", "¢¿›¢")
+	stringer := StrReplace(string, "_", "¢›¿¢")
+	string := StrReplace(stringer, "=", "¢ª¿¢")
+	stringer := StrReplace(string, "+", "¢¿ª¢")
+	string := StrReplace(stringer, "`[", "¢¼ª¢")
+	stringer := StrReplace(string, "`]", "¢¾ª¢")
+	string := StrReplace(stringer, "`{", "¢ª¾¢")
+	stringer := StrReplace(string, "`}", "¢ª¼¢")
+	string := StrReplace(stringer, "\", "¢³¼¢")
+	stringer := StrReplace(string, "|", "¢¼³¢")
+	string := StrReplace(stringer, ";", "¢¾³¢")
+	stringer := StrReplace(string, "`:", "¢³½¢")
+	string := StrReplace(stringer, "`'", "¢½³¢")
+	stringer := StrReplace(string, """", "¢º³¢")
+	string := StrReplace(stringer, "<", "¢¿³¢")
+	stringer := StrReplace(string, ">", "¢³›¢")
+	string := StrReplace(stringer, ",", "¢›³¢")
+	stringer := StrReplace(string, ".", "¢³¿¢")
+	string := StrReplace(stringer, "/", "¢¹¢")
+	stringer := StrReplace(string, "?", "¢¹•¢")
+	string := StrReplace(stringer, "`n", "¢•¹¢")
+	stringer := StrReplace(string, "`r", "¢¿¹¢")
+	FileDelete,%type2%
+	FileAppend,%stringer%,output/output.txt
+	FileDelete,temp/script.txt
+	FileRemoveDir,temp
+	ExitApp
+}
+if type = 2
+{
+	TrayTip, Starting`,Welcome To Altify`'s Decoder, Created By Altify#0016`nDiscord: https://discord.altifydeveloping.com/,,17
+	Sleep, 2000
+	TrayTip
+	FileCreateDir,output
+	FileCreateDir,temp
+	FileAppend,`n`r,%type2%
+	Loop, Read, %type2%
+	{
+		total_lines = %A_Index%
+		scrinst = %A_Index%
+	}
+	Loop, %total_lines%
+	{
+		scrinst -= 1
+		FileReadLine,towrite,%type2%,%scrinst%
+		FileAppend,%towrite%`n,temp/script.txt
+	}
+	FileRead,alsotowrite,temp/script.txt
+	FileRead,string,%type2%
+	stringer := StrReplace(string, "¢¡¢", "a")
+	string := StrReplace(stringer, "¢¡¡¢", "b")
+	stringer := StrReplace(string, "¢¡²¢", "c")
+	string := StrReplace(stringer, "¢²¡¢", "d")
+	stringer := StrReplace(string, "¢²¢", "e")
+	string := StrReplace(stringer, "¢•¢", "f")
+	stringer := StrReplace(string, "¢»•¢", "g")
+	string := StrReplace(stringer, "¢•£¢", "h")
+	stringer := StrReplace(string, "¢²£¢", "i")
+	string := StrReplace(stringer, "¢•²¢", "j")
+	stringer := StrReplace(string, "¢£¢", "k")
+	string := StrReplace(stringer, "¢°£¢", "l")
+	stringer := StrReplace(string, "¢£°¢", "m")
+	string := StrReplace(stringer, "¢£²¢", "n")
+	stringer := StrReplace(string, "¢²°¢", "o")
+	string := StrReplace(stringer, "¢°²¢", "p")
+	stringer := StrReplace(string, "¢°¢", "q")
+	string := StrReplace(stringer, "¢°º¢", "r")
+	stringer := StrReplace(string, "¢º°¢", "s")
+	string := StrReplace(stringer, "¢º²¢", "t")
+	stringer := StrReplace(string, "¢²º¢", "u")
+	string := StrReplace(stringer, "¢º»¢", "v")
+	stringer := StrReplace(string, "¢¼»¢", "w")
+	string := StrReplace(stringer, "¢»¼¢", "x")
+	stringer := StrReplace(string, "¢ºº¢", "y")
+	string := StrReplace(stringer, "¢º©¢", "z")
+	stringer := StrReplace(string, "¢¡³¢", "A")
+	string := StrReplace(stringer, "¢³¡¢", "B")
+	stringer := StrReplace(string, "¢¡•¢", "C")
+	string := StrReplace(stringer, "¢•¡¢", "D")
+	stringer := StrReplace(string, "¢¡€¢", "E")
+	string := StrReplace(stringer, "¢×£¢", "F")
+	stringer := StrReplace(string, "¢£•¢", "G")
+	string := StrReplace(stringer, "¢•€¢", "H")
+	stringer := StrReplace(string, "¢€•¢", "I")
+	string := StrReplace(stringer, "¢¤¢", "J")
+	stringer := StrReplace(string, "¢£×¢", "K")
+	string := StrReplace(stringer, "¢»£¢", "L")
+	stringer := StrReplace(string, "¢£°¤¢", "M")
+	string := StrReplace(stringer, "¢£¤¢", "N")
+	stringer := StrReplace(string, "¢¤£¢", "O")
+	string := StrReplace(stringer, "¢°×¢", "P")
+	stringer := StrReplace(string, "¢°¤¢", "Q")
+	string := StrReplace(stringer, "¢¤°¢", "R")
+	stringer := StrReplace(string, "¢º¤¢", "S")
+	string := StrReplace(stringer, "¢¤º¢", "T")
+	stringer := StrReplace(string, "¢×º¢", "U")
+	string := StrReplace(stringer, "¢º¢", "V")
+	stringer := StrReplace(string, "¢¼º¢", "W")
+	string := StrReplace(stringer, "¢º¼¢", "X")
+	stringer := StrReplace(string, "¢»º¢", "Y")
+	string := StrReplace(stringer, "¢º¾¥¢", "Z")
+	stringer := StrReplace(string, "¢¼¢", "1")
+	string := StrReplace(stringer, "¢‹¢", "2")
+	stringer := StrReplace(string, "¢‹¼¢", "3")
+	string := StrReplace(stringer, "¢¼¥¢", "4")
+	stringer := StrReplace(string, "¢‹¥¢", "5")
+	string := StrReplace(stringer, "¢½¢", "6")
+	stringer := StrReplace(string, "¢½‹¢", "7")
+	string := StrReplace(stringer, "¢‹½¢", "8")
+	stringer := StrReplace(string, "¢½¥¢", "9")
+	string := StrReplace(stringer, "¢¥½¢", "0")
+	stringer := StrReplace(string, "¢¾¢", "``")
+	string := StrReplace(stringer, "¢‹¾¢", "~")
+	stringer := StrReplace(string, "¢¾‹¢", "!")
+	string := StrReplace(stringer, "¢¾¥¢", "@")
+	stringer := StrReplace(string, "¢¥¾¢", "#")
+	string := StrReplace(stringer, "¢‹¾¢", "$")
+	stringer := StrReplace(string, "¢¼¾¢", "`%")
+	string := StrReplace(stringer, "¢¾¼¢", "`^")
+	stringer := StrReplace(string, "¢ª¢", "*")
+	string := StrReplace(stringer, "¢¼©¢", "`(")
+	stringer := StrReplace(string, "¢¿¢", "`)")
+	string := StrReplace(stringer, "¢¿›¢", "-")
+	stringer := StrReplace(string, "¢›¿¢", "_")
+	string := StrReplace(stringer, "¢ª¿¢", "=")
+	stringer := StrReplace(string, "¢¿ª¢", "+")
+	string := StrReplace(stringer, "¢¼ª¢", "`[")
+	stringer := StrReplace(string, "¢¾ª¢", "`]")
+	string := StrReplace(stringer, "¢ª¾¢", "`{")
+	stringer := StrReplace(string, "¢ª¼¢", "`}")
+	string := StrReplace(stringer, "¢³¼¢", "\")
+	stringer := StrReplace(string, "¢¼³¢", "|")
+	string := StrReplace(stringer, "¢¾³¢", ";")
+	stringer := StrReplace(string, "¢³½¢", "`:")
+	string := StrReplace(stringer, "¢½³¢", "`'")
+	stringer := StrReplace(string, "¢º³¢", """")
+	string := StrReplace(stringer, "¢¿³¢", "<")
+	stringer := StrReplace(string, "¢³›¢", ">")
+	string := StrReplace(stringer, "¢›³¢", ",")
+	stringer := StrReplace(string, "¢³¿¢", ".")
+	string := StrReplace(stringer, "¢¹¢", "/")
+	stringer := StrReplace(string, "¢¹•¢", "?")
+	string := StrReplace(stringer, "¢•¹¢", "`n")
+	stringer := StrReplace(string, "¢¿¹¢", "`r")
+	FileDelete,%type2%
+	FileAppend,%stringer%,output/output.txt
+	FileDelete,temp/script.txt
+	FileRemoveDir,temp
+	ExitApp
+}
