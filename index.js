@@ -36,7 +36,7 @@ const argv = yargs
 	.option('type', {
 		description: 'sets the language of the encoder/decoder, choices are default, ahk, and python',
 		alias: ['t'],
-		choices: ['default', 'ahk', 'python']
+		choices: ['default', 'ahk', 'python', 'java']
 	})
 	.help()
 	.alias('help', 'h').argv;
@@ -66,6 +66,18 @@ if (argv.clear == '') {
 		if (err) console.log('not found');
 	});
 	fs.unlink('./decode.ahk', (err) => {
+		if (err) console.log('not found');
+	});
+	fs.unlink('./encode.py', (err) => {
+		if (err) console.log('not found');
+	});
+	fs.unlink('./decode.py', (err) => {
+		if (err) console.log('not found');
+	});
+	fs.unlink('./encode.java', (err) => {
+		if (err) console.log('not found');
+	});
+	fs.unlink('./decode.java', (err) => {
 		if (err) console.log('not found');
 	});
 	throw new Error(`Complete, Exiting Script\nExit Code: 200\nFor References to error codes: \"node index.js -C\"`);
@@ -120,7 +132,6 @@ if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'd
 		})
 	}
 }
-
 if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'python') {
 	console.log(argv.security + 2);
 	let txt1 = `from pathlib import Path\ntxt = Path('`+argv.script+"').read_text()"+`\n`
@@ -160,6 +171,53 @@ if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'p
 			if (error) return log.error(error);
 		})
 		let fp66 = "./decode.py"
+		fs.appendFile(fp66, txt2, function(error) {
+			if (error) return log.error(error);
+		})
+	}
+}
+if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'java') {
+	console.log(argv.security + 2);
+	let txt1 = `// run me with the following command lines \n// sh -c javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')\n// java -classpath .:target/dependency/* encode\nimport java.io.*;\nimport java.util.*;\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.io.FileWriter;\n\npublic class encode {\n	public static void main(String[] args)\n		throws IOException\n	{\n		Path fileName\n			= Path.of(\"`+argv.script+`\");\n		String str1 = Files.readString(fileName);\n		System.out.println(str1);\n`
+	let txt2 = `// run me with the following command lines \n// sh -c javac -classpath .:target/dependency/* -d . $(find . -type f -name '*.java')\n// java -classpath .:target/dependency/* decode\nimport java.io.*;\nimport java.util.*;\nimport java.io.IOException;\nimport java.nio.file.Files;\nimport java.nio.file.Path;\nimport java.io.FileWriter;\n\npublic class decode {\n	public static void main(String[] args)\n		throws IOException\n	{\n		Path fileName\n			= Path.of(\"encoded.txt\");\n		String str1 = Files.readString(fileName);\n		System.out.println(str1);\n`
+	let fp3 = "./encode.java"
+	fs.appendFile(fp3, txt1, function(error) {
+		if (error) return log.error(error);
+	})
+	let fp4 = "./decode.java"
+	fs.appendFile(fp4, txt2, function(error) {
+		if (error) return log.error(error);
+	})
+	var r = 1;
+	setTimeout(generation, 500);
+	async function generation() {
+		for (let e = 0; e < 52; e++) {
+			var rand = randomString(argv.s + 2, '¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƀƁƂƃƄƅƆƇƈƉƊƋƌƍƎƏƐƑƒƓƔƕƖƗƘƙƚƛƜƝƞƟƠơƢƣƤƥƦƧƨƩƪƫƬƭƮƯưƱƲƳƴƵƶƷƸƹƺƻƼƽƾƿǀǁǂǃǄǅǆǇǈǉǊǋǌǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǝǞǟǠǡǢǣǤǥǦǧǨǩǪǫǬǭǮǯǰǱǲǳǴǵǶǷǸǹǺǻǼǽǾǿȀȁȂȃȄȅȆȇȈȉȊȋȌȍȎȏȐȑȒȓȔȕȖȗȘșȚțȜȝȞȟȠȡȢȣȤȥȦȧȨȩȪȫȬȭȮȯȰȱȲȳȴȵȶȷȸȹȺȻȼȽȾȿɀɁɂɃɄɅɆɇɈɉɊɋɌɍɎɏɐɑɒɓɔɕɖɗɘəɚɛɜɝɞɟɠɡɢɣɤɥɦɧɨɩɪɫɬɭɮɯɰɱɲɳɴɵɶɷɸɹɺɻɼɽɾɿʀʁʂʃʄʅʆʇʈʉʊʋʌʍʎʏʐʑʒʓʔʕʖʗʘʙʚʛʜʝʞʟʠʡʢʣʤʥʦʧʨʩʪʫʬʭʮʯʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˁ˂˃˄˅ˆˇˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˘˙˚˛˜˝˞˟ˠˡˢˣˤ˥˦˧˨˩˪˫ˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿̴̵̶̷̸̡̢̧̨̛̖̗̘̙̜̝̞̟̠̣̤̥̦̩̪̫̬̭̮̯̰̱̲̳̹̺̻̼͇͈͉͍͎̀́̂̃̄̅̆̇̈̉̊̋̌̍̎̏̐̑̒̓̔̽̾̿̀́͂̓̈́͆͊͋͌̕̚ͅ͏͓͔͕͖͙͚͐͑͒͗͛ͣͤͥͦͧͨͩͪͫͬͭͮͯ͘͜͟͢͝͞͠͡ͰͱͲͳʹ͵ͶͷͺͻͼͽͿ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈ');
+			// ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ
+			var characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"];
+			let txt = `		String str${r + 1} = str${r}.replace(\"${characters[e]}\", \"¢${rand}¢\");\n`
+			let fp3 = "./encode.java"
+			fs.appendFile(fp3, txt, function(error) {
+				if (error) return log.error(error);
+			})
+			let txt2 = `		String str${r + 1} = str${r}.replace(\"¢${rand}¢\", \"${characters[e]}\");\n`
+			let fp4 = "./decode.java"
+			fs.appendFile(fp4, txt2, function(error) {
+				if (error) return log.error(error);
+			})
+			r++
+			await freeze(10);
+		}
+	}
+	setTimeout(finish, 1500);
+	function finish() {
+		let txt1 = `		System.out.println(str${r});\n		try {\n            FileWriter fw\n                = new FileWriter("encoded.txt", false);\n            for (int i = 0; i < str${r}.length(); i++)\n                fw.write(str${r}.charAt(i));\n            System.out.println("Successfully written");\n            fw.close();\n        }\n        catch (Exception e) {\n            e.getStackTrace();\n        }\n	}\n}`
+		let txt2 = `		System.out.println(str${r});\n		try {\n            FileWriter fw\n                = new FileWriter("decoded.txt", false);\n            for (int i = 0; i < str${r}.length(); i++)\n                fw.write(str${r}.charAt(i));\n            System.out.println("Successfully written");\n            fw.close();\n        }\n        catch (Exception e) {\n            e.getStackTrace();\n        }\n	}\n}`
+		let fp77 = "./encode.java"
+		fs.appendFile(fp77, txt1, function(error) {
+			if (error) return log.error(error);
+		})
+		let fp66 = "./decode.java"
 		fs.appendFile(fp66, txt2, function(error) {
 			if (error) return log.error(error);
 		})
