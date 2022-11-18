@@ -37,7 +37,7 @@ const argv = yargs
 	.option('type', {
 		description: 'sets the language of the encoder/decoder, choices are default, ahk, python, java, cpp, chinese, arabic, and russian',
 		alias: ['t'],
-		choices: ['default', 'ahk', 'python', 'java', 'cpp', 'chinese', 'arabic', 'russian']
+		choices: ['default', 'ahk', 'python', 'java', 'cpp', 'chinese', 'arabic', 'russian', 'default_advanced']
 	})
 	.help()
 	.alias('help', 'h').argv;
@@ -108,6 +108,50 @@ if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'd
 			var rand = randomString(argv.s + 2, '¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƀƁƂƃƄƅƆƇƈƉƊƋƌƍƎƏƐƑƒƓƔƕƖƗƘƙƚƛƜƝƞƟƠơƢƣƤƥƦƧƨƩƪƫƬƭƮƯưƱƲƳƴƵƶƷƸƹƺƻƼƽƾƿǀǁǂǃǄǅǆǇǈǉǊǋǌǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǝǞǟǠǡǢǣǤǥǦǧǨǩǪǫǬǭǮǯǰǱǲǳǴǵǶǷǸǹǺǻǼǽǾǿȀȁȂȃȄȅȆȇȈȉȊȋȌȍȎȏȐȑȒȓȔȕȖȗȘșȚțȜȝȞȟȠȡȢȣȤȥȦȧȨȩȪȫȬȭȮȯȰȱȲȳȴȵȶȷȸȹȺȻȼȽȾȿɀɁɂɃɄɅɆɇɈɉɊɋɌɍɎɏɐɑɒɓɔɕɖɗɘəɚɛɜɝɞɟɠɡɢɣɤɥɦɧɨɩɪɫɬɭɮɯɰɱɲɳɴɵɶɷɸɹɺɻɼɽɾɿʀʁʂʃʄʅʆʇʈʉʊʋʌʍʎʏʐʑʒʓʔʕʖʗʘʙʚʛʜʝʞʟʠʡʢʣʤʥʦʧʨʩʪʫʬʭʮʯʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˁ˂˃˄˅ˆˇˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˘˙˚˛˜˝˞˟ˠˡˢˣˤ˥˦˧˨˩˪˫ˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿̴̵̶̷̸̡̢̧̨̛̖̗̘̙̜̝̞̟̠̣̤̥̦̩̪̫̬̭̮̯̰̱̲̳̹̺̻̼͇͈͉͍͎̀́̂̃̄̅̆̇̈̉̊̋̌̍̎̏̐̑̒̓̔̽̾̿̀́͂̓̈́͆͊͋͌̕̚ͅ͏͓͔͕͖͙͚͐͑͒͗͛ͣͤͥͦͧͨͩͪͫͬͭͮͯ͘͜͟͢͝͞͠͡ͰͱͲͳʹ͵ͶͷͺͻͼͽͿ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈ');
 			// ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ
 			var characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"];
+			let txt = ".replace(/" + `${characters[e]}` + "/gi, \"" + `¢${rand}¢` + "\")"
+			let fp3 = "./encode.js"
+			fs.appendFile(fp3, txt, function(error) {
+				if (error) return log.error(error);
+			})
+			let txt2 = ".replace(/" + `¢${rand}¢` + "/gi, \"" + `${characters[e]}` + "\")"
+			let fp4 = "./decode.js"
+			fs.appendFile(fp4, txt2, function(error) {
+				if (error) return log.error(error);
+			})
+		}
+	}
+	setTimeout(finish, 1000);
+	function finish() {
+		let txt1 = `;\n	fs.appendFile(\'encoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}\nif (argv.type == \'decoder\') {\n	`
+		let txt2 = `let txt1 = fs.readFileSync(\'encoded.txt\', \'utf-8\')`
+		let txt3 = fs.readFileSync('decode.js', 'utf-8');
+		let txt4 = `\n	fs.appendFile(\'decoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}`
+		let fp77 = "./encode.js"
+		fs.appendFile(fp77, txt1+txt2+txt3+';'+txt4, function(error) {
+			if (error) return log.error(error);
+		})
+		setTimeout(unlinker, 500);
+		function unlinker() {
+			fs.unlink('./decode.js', (err) => {
+				if (err) console.log('not found');
+			});
+		}
+	}
+}
+if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'default_advanced') {
+	console.log(argv.security);
+	let txt1 = `const fs = require(\'fs\');\nconst yargs = require(\'yargs\');\nconst argv = yargs\n	.option(\'clear\', {\n		description: \'Deletes decoded.txt & encoded.txt using \\\"node encoder.js -c\\\"\',\n		alias: \'c\',\n		type: \'string\'\n	})\n	.option(\'type\', {\n		description: \'choose between encoder/decoder\',\n		alias: [\'t\'],\n		choices: [\'encoder\', \'decoder\']\n	})\n	.option(\'script\', {\n		description: \'name of script/file \\( only for encoding, decoder defaults to encoded.txt\\)\',\n		alias: [\'s\'],\n		type: \'string\'\n	})\n	.help()\n	.alias(\'help\', \'h\').argv;\nif (argv.type == \'encoder\') {\n	let txt1 = fs.readFileSync(argv.script, \'utf-8\')`
+	let fp3 = "./encode.js"
+	fs.appendFile(fp3, txt1, function(error) {
+		if (error) return log.error(error);
+	})
+	setTimeout(generation, 500);
+	function generation() {
+		for (let e = 0; e < 106; e++) {
+			var rand = randomString(argv.s, '¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſƀƁƂƃƄƅƆƇƈƉƊƋƌƍƎƏƐƑƒƓƔƕƖƗƘƙƚƛƜƝƞƟƠơƢƣƤƥƦƧƨƩƪƫƬƭƮƯưƱƲƳƴƵƶƷƸƹƺƻƼƽƾƿǀǁǂǃǄǅǆǇǈǉǊǋǌǍǎǏǐǑǒǓǔǕǖǗǘǙǚǛǜǝǞǟǠǡǢǣǤǥǦǧǨǩǪǫǬǭǮǯǰǱǲǳǴǵǶǷǸǹǺǻǼǽǾǿȀȁȂȃȄȅȆȇȈȉȊȋȌȍȎȏȐȑȒȓȔȕȖȗȘșȚțȜȝȞȟȠȡȢȣȤȥȦȧȨȩȪȫȬȭȮȯȰȱȲȳȴȵȶȷȸȹȺȻȼȽȾȿɀɁɂɃɄɅɆɇɈɉɊɋɌɍɎɏɐɑɒɓɔɕɖɗɘəɚɛɜɝɞɟɠɡɢɣɤɥɦɧɨɩɪɫɬɭɮɯɰɱɲɳɴɵɶɷɸɹɺɻɼɽɾɿʀʁʂʃʄʅʆʇʈʉʊʋʌʍʎʏʐʑʒʓʔʕʖʗʘʙʚʛʜʝʞʟʠʡʢʣʤʥʦʧʨʩʪʫʬʭʮʯʰʱʲʳʴʵʶʷʸʹʺʻʼʽʾʿˀˁ˂˃˄˅ˆˇˈˉˊˋˌˍˎˏːˑ˒˓˔˕˖˗˘˙˚˛˜˝˞˟ˠˡˢˣˤ˥˦˧˨˩˪˫ˬ˭ˮ˯˰˱˲˳˴˵˶˷˸˹˺˻˼˽˾˿̴̵̶̷̸̡̢̧̨̛̖̗̘̙̜̝̞̟̠̣̤̥̦̩̪̫̬̭̮̯̰̱̲̳̹̺̻̼͇͈͉͍͎̀́̂̃̄̅̆̇̈̉̊̋̌̍̎̏̐̑̒̓̔̽̾̿̀́͂̓̈́͆͊͋͌̕̚ͅ͏͓͔͕͖͙͚͐͑͒͗͛ͣͤͥͦͧͨͩͪͫͬͭͮͯ͘͜͟͢͝͞͠͡ͰͱͲͳʹ͵ͶͷͺͻͼͽͿ΄΅Ά·ΈΉΊΌΎΏΐΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩΪΫάέήίΰαβγδεζηθικλμνξοπρςστυφχψωϊϋόύώϏϐϑϒϓϔϕϖϗϘϙϚϛϜϝϞϟϠϡϢϣϤϥϦϧϨϩϪϫϬϭϮϯϰϱϲϳϴϵ϶ϷϸϹϺϻϼϽϾϿЀЁЂЃЄЅІЇЈ');
+			// ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ
+			// , 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"
+			var characters = ['#SingleInstance, Force', 'Welcome To', 'Checking For Updates', 'Accessing Github', 'Installation Process', 'Checking Installation', 'Has Not Been Installed Yet. Do You Want To Begin The Process?', 'Installer', 'Advertisment You Wish To Place In Your', 'Amount of Accounts You Would Like To Generate', 'Do You Wish To Be Inlcuded in Growing List of beta Testers?', 'Enter Text Here', 'Gui, Add, Edit,', 'NO AD PROVIDED', 'length', 'Recommended for performance and compatibility with future AutoHotkey releases', 'Enable warnings to assist with detecting common errors', 'Recommended for new scripts due to its superior speed and reliability', 'Ensures a consistent starting directory', 'Starting', 'SetBatchLines, -1', 'MsgBox', 'IfExist', 'FileRecycle', 'URLDownloadToFile', 'IfNotExist', 'Gui, Add, Text', 'Gui, Add, Button', 'Please Enter Your', 'Probability', 'settings', 'IP', 'Sleep', 'NAMES', 'Account Targeted Account Generator By', 'Gui, Show', 'return', 'GuiClose', 'ButtonCancel', 'ExitApp', 'ButtonInstall', 'Gui, Submit', 'FileCreateDir', 'Please Enter The', 'Capture', 'CheckBox', 'Targeting Account Generator By Altify', 'ButtonOK', 'Blank', 'IfEqual', 'GenerateRandomString', 'characters', 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678901234567890', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890', 'StringSplit', 'chars', 'Random', 'Loop', 'password', 'Token', 'pak', 'state', 'FileReadLine', 'Country', 'FileReadNumber', 'FirstName', 'LastName', 'Mail', 'Generated', 'Altify', '4476', 'Thanks For Boosting.txt', 'Subscription', 'Subscribed', 'False', 'True', 'RemainingYears', 'RemainingMonths', 'RemainingDays', 'RemainingHours', 'RemainingMinutes', 'RemainingSeconds', 'RemainingMiliseconds', 'Time Remaining', 'pin', 'FileAppend', 'Computer Information', 'Username', 'Computer Name', 'Personal Identification Number', 'Micosoft Account Linked', 'Product Activation Key', 'discord', 'ccsec', 'Credit Card', 'Expiration Date', 'Card Network', 'MasterCard\\/Access\\/Eurocard', 'Credits', 'Account Creator By', 'Language: AutoHotKey\`nDiscLink: %DiscLink%\`nYTLink: %YT%\`nTwitchLink: %TwitchLink%', '#NoEnv', '#Warn', 'SendMode Input', 'SetWorkingDir %A_ScriptDir%', 'info'];
 			let txt = ".replace(/" + `${characters[e]}` + "/gi, \"" + `¢${rand}¢` + "\")"
 			let fp3 = "./encode.js"
 			fs.appendFile(fp3, txt, function(error) {
