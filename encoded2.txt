@@ -1,5 +1,0 @@
-const fs = require('fs');
-let txt1 = fs.readFileSync('encoded.txt', 'utf-8').replace(/\/1\//gi, "\/a\/").replace(/\/2\//gi, "\/b\/").replace(/\/3\//gi, "\/c\/").replace(/\/4\//gi, "\/d\/").replace(/\/5\//gi, "\/e\/").replace(/\/6\//gi, "\/f\/").replace(/\/7\//gi, "\/g\/").replace(/\/8\//gi, "\/h\/").replace(/\/9\//gi, "\/i\/").replace(/\/10\//gi, "\/j\/").replace(/\/11\//gi, "\/k\/").replace(/\/12\//gi, "\/l\/").replace(/\/13\//gi, "\/m\/").replace(/\/14\//gi, "\/n\/").replace(/\/15\//gi, "\/o\/").replace(/\/16\//gi, "\/p\/").replace(/\/17\//gi, "\/q\/").replace(/\/18\//gi, "\/r\/").replace(/\/19\//gi, "\/s\/").replace(/\/20\//gi, "\/t\/").replace(/\/21\//gi, "\/u\/").replace(/\/22\//gi, "\/v\/").replace(/\/23\//gi, "\/w\/").replace(/\/24\//gi, "\/x\/").replace(/\/25\//gi, "\/y\/").replace(/\/26\//gi, "\/z\/");
-fs.appendFile('decoded.txt', txt1, function(error) {
-		if (error) return log.error(error);
-})

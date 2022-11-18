@@ -35,9 +35,9 @@ const argv = yargs
 		type: 'string'
 	})
 	.option('type', {
-		description: 'sets the language of the encoder/decoder, choices are default, ahk, and python',
+		description: 'sets the language of the encoder/decoder, choices are default, ahk, python, java, cpp, chinese, arabic, and russian',
 		alias: ['t'],
-		choices: ['default', 'ahk', 'python', 'java', 'cpp']
+		choices: ['default', 'ahk', 'python', 'java', 'cpp', 'chinese', 'arabic', 'russian']
 	})
 	.help()
 	.alias('help', 'h').argv;
@@ -141,8 +141,7 @@ if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'd
 }
 if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'chinese') {
 	console.log(argv.security + 2);
-	let txt1 = `const fs = require('fs');\nconst yargs = require('yargs');\n` + "let txt1 = fs.readFileSync('" + argv.script + "', 'utf-8')"
-	let txt2 = `const fs = require('fs');\n` + "let txt1 = fs.readFileSync('encoded.txt', 'utf-8')"
+	let txt1 = `const fs = require(\'fs\');\nconst yargs = require(\'yargs\');\nconst argv = yargs\n	.option(\'clear\', {\n		description: \'Deletes decoded.txt & encoded.txt using \\\"node encoder.js -c\\\"\',\n		alias: \'c\',\n		type: \'string\'\n	})\n	.option(\'type\', {\n		description: \'choose between encoder/decoder\',\n		alias: [\'t\'],\n		choices: [\'encoder\', \'decoder\']\n	})\n	.option(\'script\', {\n		description: \'name of script/file \\( only for encoding, decoder defaults to encoded.txt\\)\',\n		alias: [\'s\'],\n		type: \'string\'\n	})\n	.help()\n	.alias(\'help\', \'h\').argv;\nif (argv.type == \'encoder\') {\n	let txt1 = fs.readFileSync(argv.script+\'.txt\', \'utf-8\')`
 	let fp3 = "./encode.js"
 	fs.appendFile(fp3, txt1, function(error) {
 		if (error) return log.error(error);
@@ -167,16 +166,106 @@ if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'c
 	}
 	setTimeout(finish, 1000);
 	function finish() {
-		let txt1 = `;\nfs.appendFile('encoded.txt', txt1, function(error) {\n		if (error) return log.error(error);\n})`
-		let txt2 = `;\nfs.appendFile('decoded.txt', txt1, function(error) {\n		if (error) return log.error(error);\n})`
+		let txt1 = `;\n	fs.appendFile(\'encoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}\nif (argv.type == \'decoder\') {\n	`
+		let txt2 = `let txt1 = fs.readFileSync(\'encoded.txt\', \'utf-8\')`
+		let txt3 = fs.readFileSync('decode.js', 'utf-8');
+		let txt4 = `\n	fs.appendFile(\'decoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}`
 		let fp77 = "./encode.js"
-		fs.appendFile(fp77, txt1, function(error) {
+		fs.appendFile(fp77, txt1+txt2+txt3+';'+txt4, function(error) {
 			if (error) return log.error(error);
 		})
-		let fp66 = "./decode.js"
-		fs.appendFile(fp66, txt2, function(error) {
+		setTimeout(unlinker, 500);
+		function unlinker() {
+			fs.unlink('./decode.js', (err) => {
+				if (err) console.log('not found');
+			});
+		}
+	}
+}
+if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'arabic') {
+	console.log(argv.security + 2);
+	let txt1 = `const fs = require(\'fs\');\nconst yargs = require(\'yargs\');\nconst argv = yargs\n	.option(\'clear\', {\n		description: \'Deletes decoded.txt & encoded.txt using \\\"node encoder.js -c\\\"\',\n		alias: \'c\',\n		type: \'string\'\n	})\n	.option(\'type\', {\n		description: \'choose between encoder/decoder\',\n		alias: [\'t\'],\n		choices: [\'encoder\', \'decoder\']\n	})\n	.option(\'script\', {\n		description: \'name of script/file \\( only for encoding, decoder defaults to encoded.txt\\)\',\n		alias: [\'s\'],\n		type: \'string\'\n	})\n	.help()\n	.alias(\'help\', \'h\').argv;\nif (argv.type == \'encoder\') {\n	let txt1 = fs.readFileSync(argv.script+\'.txt\', \'utf-8\')`
+	let fp3 = "./encode.js"
+	fs.appendFile(fp3, txt1, function(error) {
+		if (error) return log.error(error);
+	})
+	setTimeout(generation, 500);
+	function generation() {
+		for (let e = 0; e < 52; e++) {
+			var rand = randomString(argv.s + 2, 'ابتثجحخدذرزسشصضطظعغفقكلمنهويءًٌٍَُِّْٰٖٗآٱأإةؤئىـ.،؛!؟٪٫٬٩٨٧٦٥٤٣٢١٠');
+			// ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ
+			var characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"];
+			let txt = ".replace(/" + `${characters[e]}` + "/gi, \"" + `${rand}` + "\")"
+			let fp3 = "./encode.js"
+			fs.appendFile(fp3, txt, function(error) {
+				if (error) return log.error(error);
+			})
+			let txt2 = ".replace(/" + `${rand}` + "/gi, \"" + `${characters[e]}` + "\")"
+			let fp4 = "./decode.js"
+			fs.appendFile(fp4, txt2, function(error) {
+				if (error) return log.error(error);
+			})
+		}
+	}
+	setTimeout(finish, 1000);
+	function finish() {
+		let txt1 = `;\n	fs.appendFile(\'encoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}\nif (argv.type == \'decoder\') {\n	`
+		let txt2 = `let txt1 = fs.readFileSync(\'encoded.txt\', \'utf-8\')`
+		let txt3 = fs.readFileSync('decode.js', 'utf-8');
+		let txt4 = `\n	fs.appendFile(\'decoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}`
+		let fp77 = "./encode.js"
+		fs.appendFile(fp77, txt1+txt2+txt3+';'+txt4, function(error) {
 			if (error) return log.error(error);
 		})
+		setTimeout(unlinker, 500);
+		function unlinker() {
+			fs.unlink('./decode.js', (err) => {
+				if (err) console.log('not found');
+			});
+		}
+	}
+}
+if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'russian') {
+	console.log(argv.security + 2);
+	let txt1 = `const fs = require(\'fs\');\nconst yargs = require(\'yargs\');\nconst argv = yargs\n	.option(\'clear\', {\n		description: \'Deletes decoded.txt & encoded.txt using \\\"node encoder.js -c\\\"\',\n		alias: \'c\',\n		type: \'string\'\n	})\n	.option(\'type\', {\n		description: \'choose between encoder/decoder\',\n		alias: [\'t\'],\n		choices: [\'encoder\', \'decoder\']\n	})\n	.option(\'script\', {\n		description: \'name of script/file \\( only for encoding, decoder defaults to encoded.txt\\)\',\n		alias: [\'s\'],\n		type: \'string\'\n	})\n	.help()\n	.alias(\'help\', \'h\').argv;\nif (argv.type == \'encoder\') {\n	let txt1 = fs.readFileSync(argv.script+\'.txt\', \'utf-8\')`
+	let fp3 = "./encode.js"
+	fs.appendFile(fp3, txt1, function(error) {
+		if (error) return log.error(error);
+	})
+	setTimeout(generation, 500);
+	function generation() {
+		for (let e = 0; e < 52; e++) {
+			var rand = randomString(argv.s + 2, 'аэыуояеёюибвгджзклмнпрстфхцчшщ');
+			// ¡€£¤¥ª°¹²³·®÷ǁ¼½¾⁵¿×ȼˢ⁶⁷⁸⁹⁺ø•◦∙‣⁃∞₹₨₱₩฿₫₪™š›œžŸʘ¶€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ
+			var characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', "`", "~", '!', '@', '#', '%', '&', '-', '_', '=', ',', '<', '>', ';', ':', "{", "}"];
+			let txt = ".replace(/" + `${characters[e]}` + "/gi, \"" + `${rand}` + "\")"
+			let fp3 = "./encode.js"
+			fs.appendFile(fp3, txt, function(error) {
+				if (error) return log.error(error);
+			})
+			let txt2 = ".replace(/" + `${rand}` + "/gi, \"" + `${characters[e]}` + "\")"
+			let fp4 = "./decode.js"
+			fs.appendFile(fp4, txt2, function(error) {
+				if (error) return log.error(error);
+			})
+		}
+	}
+	setTimeout(finish, 1000);
+	function finish() {
+		let txt1 = `;\n	fs.appendFile(\'encoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}\nif (argv.type == \'decoder\') {\n	`
+		let txt2 = `let txt1 = fs.readFileSync(\'encoded.txt\', \'utf-8\')`
+		let txt3 = fs.readFileSync('decode.js', 'utf-8');
+		let txt4 = `\n	fs.appendFile(\'decoded.txt\', txt1, function(error) {\n			if (error) return log.error(error);\n	})\n}`
+		let fp77 = "./encode.js"
+		fs.appendFile(fp77, txt1+txt2+txt3+';'+txt4, function(error) {
+			if (error) return log.error(error);
+		})
+		setTimeout(unlinker, 500);
+		function unlinker() {
+			fs.unlink('./decode.js', (err) => {
+				if (err) console.log('not found');
+			});
+		}
 	}
 }
 if (argv.language == 'default' && argv.script !== 'undefined' && argv.type == 'python') {
